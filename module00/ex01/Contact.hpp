@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef CONTACT_H_
+# define CONTACT_H_
+# include <iostream>
 
 class	Contact {
 	std::string first_name_;
@@ -33,3 +35,5 @@ public:
 	Contact();
 	~Contact();
 };
+
+#endif

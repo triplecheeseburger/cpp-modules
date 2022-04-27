@@ -10,8 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <Contact.hpp>
-#include <iomanip>
+#ifndef PHONEBOOK_H_
+# define PHONEBOOK_H_
+
+# include <Contact.hpp>
+# include <iomanip>
 
 class	PhoneBook {
 	Contact	contacts[8];
@@ -27,3 +30,5 @@ public:
 	PhoneBook();
 	~PhoneBook();
 };
+
+#endif
