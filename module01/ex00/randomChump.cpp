@@ -10,4 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
 
+void	Zombie::randomChump(std::string name)
+{
+	Zombie anonymous_zombie(name);
+
+	anonymous_zombie.announce();
+}

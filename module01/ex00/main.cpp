@@ -10,4 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
 
+int	main()
+{
+	Zombie	stack_zombie("static zombie");
+	Zombie* heap_zombie;
+
+	heap_zombie = Zombie::newZombie("dynamic zombie");
+	heap_zombie->announce();
+	{
+		Zombie::randomChump("inside auto zombie");
+	}
+	Zombie::randomChump("outside auto zombie");
+	delete heap_zombie;
+	return (0);
+}

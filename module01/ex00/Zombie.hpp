@@ -18,12 +18,13 @@
 class Zombie {
 	private:
 		std::string		name;
+		Zombie();
 
 	public:
 		void			announce();
 		static Zombie*	newZombie(std::string name);
 		static void 	randomChump(std::string name);
-		Zombie();
+		explicit Zombie(std::string name);
 		~Zombie();
 };
 

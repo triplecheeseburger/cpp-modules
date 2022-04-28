@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "module01"
+			"path" : "ex01"
 		}
 	],
 	"backtrace" : 1,
@@ -25,13 +25,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 17,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
 				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
@@ -42,17 +48,21 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15"
+					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
 				},
 				{
-					"fragment" : "-std=gnu++14"
+					"fragment" : "-std=gnu++98"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/hakim/cpp-modules/module01/ex00"
+					"path" : "/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"
 				}
 			],
 			"language" : "CXX",
@@ -62,18 +72,17 @@
 				[
 					1
 				],
-				"standard" : "14"
+				"standard" : "98"
 			},
 			"sourceIndexes" : 
 			[
 				0,
 				1,
-				2,
-				3
+				2
 			]
 		}
 	],
-	"id" : "module01::@6890427a1f51a3e7e1df",
+	"id" : "ex01::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -89,8 +98,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "module01",
-	"nameOnDisk" : "module01",
+	"name" : "ex01",
+	"nameOnDisk" : "ex01",
 	"paths" : 
 	{
 		"build" : ".",
@@ -104,15 +113,14 @@
 			[
 				0,
 				1,
-				2,
-				3
+				2
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				4
+				3
 			]
 		}
 	],
@@ -121,30 +129,24 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ex00/main.cpp",
+			"path" : "ex01/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ex00/newZombie.cpp",
+			"path" : "ex01/Zombie.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ex00/randomChump.cpp",
+			"path" : "ex01/zombieHorde.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "ex00/Zombie.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "ex00/Zombie.hpp",
+			"path" : "ex01/Zombie.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],
