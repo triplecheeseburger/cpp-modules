@@ -17,7 +17,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -34,7 +35,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -59,6 +61,13 @@
 					"id" : "ex02::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-ex02-Debug-42a21acfdfff720cb75b.json",
 					"name" : "ex02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex03::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex03-Debug-ef912d54792f9d8c8167.json",
+					"name" : "ex03",
 					"projectIndex" : 0
 				}
 			]

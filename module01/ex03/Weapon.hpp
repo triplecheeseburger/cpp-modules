@@ -10,4 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef WEAPON_
+# define WEAPON_
 
+# include <iostream>
+
+class	Weapon {
+	private:
+		std::string			type;
+	public:
+		void				setType(std::string weapon_type);
+		const std::string&	getType() const;
+		Weapon();
+		explicit Weapon(std::string weapon_type);
+		~Weapon();
+};
+
+#endif

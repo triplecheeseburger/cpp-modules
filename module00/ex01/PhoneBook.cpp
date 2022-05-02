@@ -107,7 +107,7 @@ void PhoneBook::Search()
 		std::cin >> show_index;
 		if (show_index < 1 || show_index > 8)
 		{
-			std::cout << "You should type index between 1 and " << index % 8 << std::endl;
+			std::cout << "You should type index between 1 and " << std::min(index, 8) << std::endl;
 			continue ;
 		}
 		break ;
