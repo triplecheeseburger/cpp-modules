@@ -58,7 +58,7 @@ void ReplaceForWinner::replace(std::string toReplace, std::string replacement)
 		outputFileStream << temp.substr(prev);
 	}
 	outputFileStream.close();
-	inputFileStream.close();ㅉㅉㅉㅉㅉㅉ
+	inputFileStream.close();
 }
 
 ReplaceForWinner::ReplaceForWinner() {}
