@@ -32,3 +32,21 @@ add_executable(ex03
         ex03/HumanB.hpp
         ex03/Weapon.hpp
         )
+
+add_executable(ex04
+        ex04/main.cpp
+        ex04/ReplaceForWinner.hpp
+        ex04/ReplaceForWinner.cpp
+        )
+
+add_executable(ex05
+        ex05/main.cpp
+        ex05/Harl.hpp
+        ex05/Harl.cpp
+        )
+
+add_executable(ex06
+        ex06/main.cpp
+        ex06/Harl.hpp
+        ex06/Harl.cpp
+        )
