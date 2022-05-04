@@ -44,7 +44,7 @@ void ReplaceForWinner::replace(std::string toReplace, std::string replacement)
 	while (!inputFileStream.eof())
 	{
 		std::string temp;
-		getline(inputFileStream, temp);
+		std::getline(inputFileStream, temp);
 		if (!inputFileStream.eof())
 			temp += "\n";
 		std::string::size_type	prev = 0;
