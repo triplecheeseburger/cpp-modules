@@ -26,6 +26,9 @@ HumanB::HumanB() : name("secret"), weapon(0) {}
 
 HumanB::HumanB(std::string name) : name(name), weapon(0) {}
 
-HumanB::HumanB(std::string name, Weapon weapon) : name(name), weapon(&weapon) {}
+HumanB::HumanB(std::string name, Weapon weapon) : name(name)
+{
+	this->weapon = &weapon;
+}
 
 HumanB::~HumanB() {}
