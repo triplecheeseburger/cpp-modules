@@ -156,7 +156,7 @@ rule CXX_EXECUTABLE_LINKER__ex00_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/EE9B3898-B67B-44CE-9A90-A73EE9DF53F8/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/hakim/cpp-modules/module01 -B/Users/hakim/cpp-modules/module01/cmake-build-debug
+  command = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/75910D59-8437-4335-A4C4-B97DDD8D69B8/d/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/hakim/cpp-modules/module01 -B/Users/hakim/cpp-modules/module01/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -165,7 +165,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/EE9B3898-B67B-44CE-9A90-A73EE9DF53F8/d/CLion.app/Contents/bin/ninja/mac/ninja $FILE_ARG -t clean $TARGETS
+  command = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/75910D59-8437-4335-A4C4-B97DDD8D69B8/d/CLion.app/Contents/bin/ninja/mac/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -173,6 +173,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/EE9B3898-B67B-44CE-9A90-A73EE9DF53F8/d/CLion.app/Contents/bin/ninja/mac/ninja -t targets
+  command = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/75910D59-8437-4335-A4C4-B97DDD8D69B8/d/CLion.app/Contents/bin/ninja/mac/ninja -t targets
   description = All primary targets available:
 

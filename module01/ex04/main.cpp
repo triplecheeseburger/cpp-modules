@@ -22,11 +22,10 @@ int main(int ac, char **av)
 		std::cerr << "./ReplaceForWinner <file> <string to replace> <replacement>" << std::endl;
 		return (1);
 	}
-	if (not_sed.setFile(av[1]) != true)
+	if (not_sed.run(av[1], av[2], av[3]) != true)
 	{
 		std::cerr << "Error occurred" << std::endl;
 		return (1);
 	}
-	not_sed.replace(av[2], av[3]);
 	return (0);
 }

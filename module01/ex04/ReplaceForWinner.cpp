@@ -12,8 +12,11 @@
 
 #include "ReplaceForWinner.hpp"
 
-bool ReplaceForWinner::setFile(std::string filepath)
+bool ReplaceForWinner::run(std::string filepath, std::string toReplace, std::string replacement)
 {
+	std::ifstream inputFileStream;
+	std::ofstream outputFileStream;
+
 	if (inputFileStream.is_open())
 		inputFileStream.close();
 	if (filepath == "")
@@ -36,11 +39,6 @@ bool ReplaceForWinner::setFile(std::string filepath)
 		std::cerr << "Fatal Error" << std::endl;
 		return (false);
 	}
-	return (true);
-}
-
-void ReplaceForWinner::replace(std::string toReplace, std::string replacement)
-{
 	while (!inputFileStream.eof())
 	{
 		std::string temp;
@@ -59,6 +57,7 @@ void ReplaceForWinner::replace(std::string toReplace, std::string replacement)
 	}
 	outputFileStream.close();
 	inputFileStream.close();
+	return (true);
 }
 
 ReplaceForWinner::ReplaceForWinner() {}

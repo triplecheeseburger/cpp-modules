@@ -19,7 +19,9 @@ void	Zombie::announce()
 
 Zombie::Zombie() : name("waiting to be one of horde") {}
 
-Zombie::Zombie(std::string name) : name(name) {}
+Zombie::Zombie(std::string name) : name(name) {
+	std::cout << name << "is constructed." << std::endl;
+}
 
 Zombie::~Zombie()
 {

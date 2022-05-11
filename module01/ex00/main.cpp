@@ -19,10 +19,7 @@ int	main()
 
 	heap_zombie = Zombie::newZombie("dynamic zombie");
 	heap_zombie->announce();
-	{
-		Zombie::randomChump("inside auto zombie");
-	}
-	Zombie::randomChump("outside auto zombie");
+	Zombie::randomChump("auto zombie");
 	delete heap_zombie;
 	return (0);
 }

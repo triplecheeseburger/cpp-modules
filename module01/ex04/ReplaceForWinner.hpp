@@ -22,12 +22,9 @@ private:
 	std::string		toReplace;
 	std::string 	replacement;
 	std::string 	file;
-	std::ifstream	inputFileStream;
-	std::ofstream	outputFileStream;
 
 public:
-	bool			setFile(std::string filepath);
-	void 			replace(std::string toReplace, std::string replacement);
+	bool 			run(std::string filepath, std::string toReplace, std::string replacement);
 	ReplaceForWinner();
 	~ReplaceForWinner();
 
