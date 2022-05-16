@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module02
+/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/316573B8-3433-4213-AF90-392A9042AC5B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/hakim/cpp-modules/module02
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module02/cmake-build-debug
+-- Build files have been written to: /Users/hakim/cpp-modules/module02/cmake-build-debug

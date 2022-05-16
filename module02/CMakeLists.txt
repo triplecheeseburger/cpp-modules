@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 project(module02)
 
-set(CMAKE_CXX_STANDARD 14)
-
-include_directories(ex00)
+set(CMAKE_CXX_STANDARD 98)
 
 add_executable(ex00
         ex00/Fixed.cpp
