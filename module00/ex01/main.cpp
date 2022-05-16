@@ -18,7 +18,7 @@ int main()
 	PhoneBook phone_book;
 
 	phone_book.Greeting();
-	while (1)
+	while (!std::cin.eof())
 	{
 		std::cout << "Command List:   1. ADD   2. SEARCH   3. EXIT   ==>  ";
 		std::cin >> cmd;

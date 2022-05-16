@@ -105,7 +105,16 @@ void PhoneBook::Search()
 	{
 		std::cout << "Select the index you want: ";
 		std::cin >> show_index;
-		if (show_index < 1 || show_index > 8)
+		if (std::cin.eof())
+			return ;
+		if (std::cin.fail())
+		{
+			std::cin.clear();
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+			std::cout << "Only numerics here!" << std::endl;
+			continue ;
+		}
+		if (show_index < 1 || show_index > std::min(index, 8))
 		{
 			std::cout << "You should type index between 1 and " << std::min(index, 8) << std::endl;
 			continue ;
