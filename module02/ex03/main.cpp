@@ -15,10 +15,10 @@
 int	main(void)
 {
 	Point	a(0, 0);
-	Point	b(20, 0);
-	Point	c(10, 30);
-	Point	point1(10, 15);
-	Point	point2(30, 50);
+	Point	b(10, 0);
+	Point	c(0, 10);
+	Point	point1(3, 3);
+	Point	point2(5, 5);
 
 	std::cout << "point1 is located " << (bsp(a, b, c, point1) ? "inside" : "outside") << " of the triangle abc." << std::endl;
 	std::cout << "point2 is located " << (bsp(a, b, c, point2) ? "inside" : "outside") << " of the triangle abc." << std::endl;

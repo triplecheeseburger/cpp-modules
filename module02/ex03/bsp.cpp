@@ -18,7 +18,12 @@ static int count_contact(Point const p1, Point const p2, Point const ref)
 
 	if (p1.getY() > ref.getY() != p2.getY() > ref.getY())
 	{
-		contact_x = p1.getX() + (ref.getY() - p1.getY()) / ((p2.getY() - p1.getY()) / (p2.getX() - p1.getX()));
+		if (p2.getX() == p1.getX())
+			contact_x = p2.getX();
+		else if (p2.getY() == p1.getY())
+			contact_x = p2.getY();
+		else
+			contact_x = p1.getX() + (ref.getY() - p1.getY()) / ((p2.getY() - p1.getY()) / (p2.getX() - p1.getX()));
 		if (contact_x > ref.getX())
 			return (1);
 	}
