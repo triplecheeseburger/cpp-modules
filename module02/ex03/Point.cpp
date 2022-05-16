@@ -40,11 +40,13 @@ Point::Point(const int x, const int y):
 {}
 
 Point::Point(const Point& origin):
-	x(origin.getX()), y(origin.getY())
+	x(origin.x), y(origin.y)
 {}
 
 Point& Point::operator=(const Point &point)
 {
+	const_cast<Fixed&>(x) = point.x;
+	const_cast<Fixed&>(y) = point.y;
 	return *this;
 }
 
