@@ -34,7 +34,7 @@ fclean: clean
 	rm -f $(NAME)
 
 re:
-	$(MAKE) fclean
-	$(MAKE) all
+	@make fclean
+	@make all
 
 .PHONY: fclean all clean re bonus
