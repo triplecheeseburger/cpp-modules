@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hangyulkim/42/42cursus/4_circle/cpp/module01
+CMAKE_SOURCE_DIR = /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/CMakeFiles /Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/CMakeFiles /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ex06
+
+# Build rule for target.
+ex06: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex06
+.PHONY : ex06
+
+# fast build rule for target.
+ex06/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex06.dir/build.make CMakeFiles/ex06.dir/build
+.PHONY : ex06/fast
+
+#=============================================================================
 # Target rules for targets named ex03
 
 # Build rule for target.
@@ -141,6 +154,32 @@ ex02: cmake_check_build_system
 ex02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/build
 .PHONY : ex02/fast
+
+#=============================================================================
+# Target rules for targets named ex05
+
+# Build rule for target.
+ex05: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex05
+.PHONY : ex05
+
+# fast build rule for target.
+ex05/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex05.dir/build.make CMakeFiles/ex05.dir/build
+.PHONY : ex05/fast
+
+#=============================================================================
+# Target rules for targets named ex04
+
+# Build rule for target.
+ex04: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex04
+.PHONY : ex04
+
+# fast build rule for target.
+ex04/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex04.dir/build.make CMakeFiles/ex04.dir/build
+.PHONY : ex04/fast
 
 #=============================================================================
 # Target rules for targets named ex01
@@ -456,6 +495,150 @@ ex03/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/main.cpp.s
 .PHONY : ex03/main.cpp.s
 
+ex04/ReplaceForWinner.o: ex04/ReplaceForWinner.cpp.o
+.PHONY : ex04/ReplaceForWinner.o
+
+# target to build an object file
+ex04/ReplaceForWinner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex04.dir/build.make CMakeFiles/ex04.dir/ex04/ReplaceForWinner.cpp.o
+.PHONY : ex04/ReplaceForWinner.cpp.o
+
+ex04/ReplaceForWinner.i: ex04/ReplaceForWinner.cpp.i
+.PHONY : ex04/ReplaceForWinner.i
+
+# target to preprocess a source file
+ex04/ReplaceForWinner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex04.dir/build.make CMakeFiles/ex04.dir/ex04/ReplaceForWinner.cpp.i
+.PHONY : ex04/ReplaceForWinner.cpp.i
+
+ex04/ReplaceForWinner.s: ex04/ReplaceForWinner.cpp.s
+.PHONY : ex04/ReplaceForWinner.s
+
+# target to generate assembly for a file
+ex04/ReplaceForWinner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex04.dir/build.make CMakeFiles/ex04.dir/ex04/ReplaceForWinner.cpp.s
+.PHONY : ex04/ReplaceForWinner.cpp.s
+
+ex04/main.o: ex04/main.cpp.o
+.PHONY : ex04/main.o
+
+# target to build an object file
+ex04/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex04.dir/build.make CMakeFiles/ex04.dir/ex04/main.cpp.o
+.PHONY : ex04/main.cpp.o
+
+ex04/main.i: ex04/main.cpp.i
+.PHONY : ex04/main.i
+
+# target to preprocess a source file
+ex04/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex04.dir/build.make CMakeFiles/ex04.dir/ex04/main.cpp.i
+.PHONY : ex04/main.cpp.i
+
+ex04/main.s: ex04/main.cpp.s
+.PHONY : ex04/main.s
+
+# target to generate assembly for a file
+ex04/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex04.dir/build.make CMakeFiles/ex04.dir/ex04/main.cpp.s
+.PHONY : ex04/main.cpp.s
+
+ex05/Harl.o: ex05/Harl.cpp.o
+.PHONY : ex05/Harl.o
+
+# target to build an object file
+ex05/Harl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex05.dir/build.make CMakeFiles/ex05.dir/ex05/Harl.cpp.o
+.PHONY : ex05/Harl.cpp.o
+
+ex05/Harl.i: ex05/Harl.cpp.i
+.PHONY : ex05/Harl.i
+
+# target to preprocess a source file
+ex05/Harl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex05.dir/build.make CMakeFiles/ex05.dir/ex05/Harl.cpp.i
+.PHONY : ex05/Harl.cpp.i
+
+ex05/Harl.s: ex05/Harl.cpp.s
+.PHONY : ex05/Harl.s
+
+# target to generate assembly for a file
+ex05/Harl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex05.dir/build.make CMakeFiles/ex05.dir/ex05/Harl.cpp.s
+.PHONY : ex05/Harl.cpp.s
+
+ex05/main.o: ex05/main.cpp.o
+.PHONY : ex05/main.o
+
+# target to build an object file
+ex05/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex05.dir/build.make CMakeFiles/ex05.dir/ex05/main.cpp.o
+.PHONY : ex05/main.cpp.o
+
+ex05/main.i: ex05/main.cpp.i
+.PHONY : ex05/main.i
+
+# target to preprocess a source file
+ex05/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex05.dir/build.make CMakeFiles/ex05.dir/ex05/main.cpp.i
+.PHONY : ex05/main.cpp.i
+
+ex05/main.s: ex05/main.cpp.s
+.PHONY : ex05/main.s
+
+# target to generate assembly for a file
+ex05/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex05.dir/build.make CMakeFiles/ex05.dir/ex05/main.cpp.s
+.PHONY : ex05/main.cpp.s
+
+ex06/Harl.o: ex06/Harl.cpp.o
+.PHONY : ex06/Harl.o
+
+# target to build an object file
+ex06/Harl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex06.dir/build.make CMakeFiles/ex06.dir/ex06/Harl.cpp.o
+.PHONY : ex06/Harl.cpp.o
+
+ex06/Harl.i: ex06/Harl.cpp.i
+.PHONY : ex06/Harl.i
+
+# target to preprocess a source file
+ex06/Harl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex06.dir/build.make CMakeFiles/ex06.dir/ex06/Harl.cpp.i
+.PHONY : ex06/Harl.cpp.i
+
+ex06/Harl.s: ex06/Harl.cpp.s
+.PHONY : ex06/Harl.s
+
+# target to generate assembly for a file
+ex06/Harl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex06.dir/build.make CMakeFiles/ex06.dir/ex06/Harl.cpp.s
+.PHONY : ex06/Harl.cpp.s
+
+ex06/main.o: ex06/main.cpp.o
+.PHONY : ex06/main.o
+
+# target to build an object file
+ex06/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex06.dir/build.make CMakeFiles/ex06.dir/ex06/main.cpp.o
+.PHONY : ex06/main.cpp.o
+
+ex06/main.i: ex06/main.cpp.i
+.PHONY : ex06/main.i
+
+# target to preprocess a source file
+ex06/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex06.dir/build.make CMakeFiles/ex06.dir/ex06/main.cpp.i
+.PHONY : ex06/main.cpp.i
+
+ex06/main.s: ex06/main.cpp.s
+.PHONY : ex06/main.s
+
+# target to generate assembly for a file
+ex06/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex06.dir/build.make CMakeFiles/ex06.dir/ex06/main.cpp.s
+.PHONY : ex06/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -468,6 +651,9 @@ help:
 	@echo "... ex01"
 	@echo "... ex02"
 	@echo "... ex03"
+	@echo "... ex04"
+	@echo "... ex05"
+	@echo "... ex06"
 	@echo "... ex00/Zombie.o"
 	@echo "... ex00/Zombie.i"
 	@echo "... ex00/Zombie.s"
@@ -504,6 +690,24 @@ help:
 	@echo "... ex03/main.o"
 	@echo "... ex03/main.i"
 	@echo "... ex03/main.s"
+	@echo "... ex04/ReplaceForWinner.o"
+	@echo "... ex04/ReplaceForWinner.i"
+	@echo "... ex04/ReplaceForWinner.s"
+	@echo "... ex04/main.o"
+	@echo "... ex04/main.i"
+	@echo "... ex04/main.s"
+	@echo "... ex05/Harl.o"
+	@echo "... ex05/Harl.i"
+	@echo "... ex05/Harl.s"
+	@echo "... ex05/main.o"
+	@echo "... ex05/main.i"
+	@echo "... ex05/main.s"
+	@echo "... ex06/Harl.o"
+	@echo "... ex06/Harl.i"
+	@echo "... ex06/Harl.s"
+	@echo "... ex06/main.o"
+	@echo "... ex06/main.i"
+	@echo "... ex06/main.s"
 .PHONY : help
 
 

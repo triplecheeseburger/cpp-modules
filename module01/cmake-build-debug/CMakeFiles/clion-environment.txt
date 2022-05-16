@@ -1,3 +1,3 @@
 ToolSet: 1.0 (local)Options: 
 
-Options:-DCMAKE_MAKE_PROGRAM=/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/75910D59-8437-4335-A4C4-B97DDD8D69B8/d/CLion.app/Contents/bin/ninja/mac/ninja
+Options:

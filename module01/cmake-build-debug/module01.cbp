@@ -8,34 +8,78 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex06">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex06"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex06/fast">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex06" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex06/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex03">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex03" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -43,21 +87,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex03"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex03"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex03/fast">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex03" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -65,21 +109,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex03/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex03/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex02">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -87,21 +131,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex02/fast">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -109,31 +153,119 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex05">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex05"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex05/fast">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex05/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex04">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex04"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex04/fast">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex04/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex01">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex01" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -141,21 +273,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex01"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex01"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex01/fast">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex01" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -163,21 +295,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex01/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex01/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex00">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex00" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex00" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -185,21 +317,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex00"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex00"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ex00/fast">
-				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/ex00" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug"/>
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/ex00" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00"/>
-					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00"/>
+					<Add directory="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -207,65 +339,92 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex00/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex00/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00/Zombie.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00/Zombie.cpp">
 			<Option target="ex00"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00/Zombie.hpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00/Zombie.hpp">
 			<Option target="ex00"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00/main.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00/main.cpp">
 			<Option target="ex00"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00/newZombie.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00/newZombie.cpp">
 			<Option target="ex00"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex00/randomChump.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex00/randomChump.cpp">
 			<Option target="ex00"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01/Zombie.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01/Zombie.cpp">
 			<Option target="ex01"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01/Zombie.hpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01/Zombie.hpp">
 			<Option target="ex01"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01/main.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01/main.cpp">
 			<Option target="ex01"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex01/zombieHorde.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex01/zombieHorde.cpp">
 			<Option target="ex01"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex02/main.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex02/main.cpp">
 			<Option target="ex02"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex03/HumanA.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex03/HumanA.cpp">
 			<Option target="ex03"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex03/HumanA.hpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex03/HumanA.hpp">
 			<Option target="ex03"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex03/HumanB.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex03/HumanB.cpp">
 			<Option target="ex03"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex03/HumanB.hpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex03/HumanB.hpp">
 			<Option target="ex03"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex03/Weapon.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex03/Weapon.cpp">
 			<Option target="ex03"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex03/Weapon.hpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex03/Weapon.hpp">
 			<Option target="ex03"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/ex03/main.cpp">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex03/main.cpp">
 			<Option target="ex03"/>
 		</Unit>
-		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp/module01/CMakeLists.txt">
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex04/ReplaceForWinner.cpp">
+			<Option target="ex04"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex04/ReplaceForWinner.hpp">
+			<Option target="ex04"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex04/main.cpp">
+			<Option target="ex04"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex05/Harl.cpp">
+			<Option target="ex05"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex05/Harl.hpp">
+			<Option target="ex05"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex05/main.cpp">
+			<Option target="ex05"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex06/Harl.cpp">
+			<Option target="ex06"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex06/Harl.hpp">
+			<Option target="ex06"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/ex06/main.cpp">
+			<Option target="ex06"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module01/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
