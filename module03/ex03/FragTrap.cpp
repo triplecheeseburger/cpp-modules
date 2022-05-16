@@ -17,7 +17,7 @@ void FragTrap::highFiveGuys(void) const
 	std::cout << "FragTrap " << name << ": HIGH FIVE GUYS!!! [RAISING HAND]" << std::endl;
 }
 
-FragTrap::FragTrap(): ClapTrap("FR4G-TP"), on_guard(false)
+FragTrap::FragTrap(): ClapTrap("FR4G-TP")
 {
 	hit_points = default_hp;
 	energy_points = default_ep;
@@ -25,7 +25,7 @@ FragTrap::FragTrap(): ClapTrap("FR4G-TP"), on_guard(false)
 	std::cout << "FragTrap " << name << " Constructor has been called." << std::endl;
 }
 
-FragTrap::FragTrap(const std::string &name) : ClapTrap(name), on_guard(false)
+FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
 {
 	hit_points = default_hp;
 	energy_points = default_ep;
@@ -33,7 +33,7 @@ FragTrap::FragTrap(const std::string &name) : ClapTrap(name), on_guard(false)
 	std::cout << "FragTrap " << name << " Constructor has been called." << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &origin): ClapTrap(origin), on_guard(false)
+FragTrap::FragTrap(const FragTrap &origin): ClapTrap(origin)
 {
 	std::cout << "FragTrap " << name << " Copy Constructor has been called." << std::endl;
 }

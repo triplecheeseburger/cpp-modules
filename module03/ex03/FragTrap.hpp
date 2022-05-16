@@ -18,8 +18,6 @@
 class FragTrap: virtual public ClapTrap {
 
 private:
-	bool	on_guard;
-
 	static const unsigned int	default_hp = 100;
 	static const unsigned int	default_ep = 100;
 	static const unsigned int	default_ad = 30;
