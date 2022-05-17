@@ -24,9 +24,9 @@ Dog::Dog():
 	std::cout << "Constructor has been called for Dog Class Instance: type " << type << "." << std::endl;
 }
 
-Dog::Dog(const Dog &origin)
+Dog::Dog(const Dog &origin):
+	Animal(origin)
 {
-	type = origin.type;
 	std::cout << "Copy Constructor has been called for Dog Class Instance: type " << type << "." << std::endl;
 }
 

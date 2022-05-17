@@ -24,10 +24,6 @@ add_executable(ex01
         ex01/Dog.cpp
         ex01/Dog.hpp
         ex01/main.cpp
-        ex01/WrongAnimal.cpp
-        ex01/WrongAnimal.hpp
-        ex01/WrongCat.cpp
-        ex01/WrongCat.hpp
         ex01/Brain.hpp
         ex01/Brain.cpp)
 

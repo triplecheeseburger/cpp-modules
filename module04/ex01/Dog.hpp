@@ -22,6 +22,8 @@ private:
 	Brain	*brain;
 public:
 	void	makeSound(void) const;
+	void		changeThought(const int& i, std::string newThought);
+	std::string	getThought(const int& i);
 
 	Dog();
 	Dog(const Dog& origin);

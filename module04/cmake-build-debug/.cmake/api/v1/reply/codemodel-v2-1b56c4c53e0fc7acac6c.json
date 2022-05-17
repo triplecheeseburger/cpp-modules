@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ex00::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ex00-Debug-8e8f89bef7f6aff61121.json",
+					"jsonFile" : "target-ex00-Debug-308c1659d0d831c16e4e.json",
 					"name" : "ex00",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ex01::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ex01-Debug-f70bde3c8c85e5425f56.json",
+					"jsonFile" : "target-ex01-Debug-b0e8306aad8b0cfd09f7.json",
 					"name" : "ex01",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/hakim/cpp-modules/module04/cmake-build-debug",
-		"source" : "/Users/hakim/cpp-modules/module04"
+		"build" : "/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug",
+		"source" : "/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04"
 	},
 	"version" : 
 	{

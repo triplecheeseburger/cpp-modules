@@ -1,4 +1,4 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/AE38B7E4-9C31-4518-9213-1CC102FF71BD/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/AE38B7E4-9C31-4518-9213-1CC102FF71BD/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/hakim/cpp-modules/module04
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/hakim/cpp-modules/module04/cmake-build-debug
+-- Build files have been written to: /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug

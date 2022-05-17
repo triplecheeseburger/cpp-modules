@@ -24,9 +24,9 @@ Cat::Cat():
 	std::cout << "Constructor has been called for Cat Class Instance: type " << type << "." << std::endl;
 }
 
-Cat::Cat(const Cat &origin)
+Cat::Cat(const Cat &origin):
+	Animal(origin)
 {
-	type = origin.type;
 	std::cout << "Copy Constructor has been called for Cat Class Instance: type " << type << "." << std::endl;
 }
 

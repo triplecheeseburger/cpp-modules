@@ -13,39 +13,45 @@
 #include "Dog.hpp"
 #include "Cat.hpp"
 #include "Animal.hpp"
-#include "WrongAnimal.hpp"
-#include "WrongCat.hpp"
 
-void	test_normal(void)
+void	test_dynamic(void)
 {
-	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl; i->makeSound(); //will output the cat sound! j->makeSound();
-	meta->makeSound();
-
-	delete meta;
 	delete j;
 	delete i;
 }
 
-void	test_abnormal(void)
+void	test_static(void)
 {
-	const WrongAnimal* wrong_meta = new WrongAnimal();
-	const WrongAnimal* wrong_j = new WrongCat();
-	std::cout << wrong_j->getType() << " " << std::endl; wrong_j->makeSound();
-	wrong_meta->makeSound();
+	Dog dog;
+	Cat cat;
 
-	delete wrong_meta;
-	delete wrong_j;
+	dog.changeThought(0, "KILL");
+	std::cout << dog.getThought(0) << std::endl;
+	Dog copyConstDog(dog);
+	dog.changeThought(0, "EAT");
+	std::cout << copyConstDog.getThought(0) << std::endl;
+	Dog copyAssignOperDog;
+	copyAssignOperDog = copyConstDog;
+	copyConstDog.changeThought(0, "EAT");
+	std::cout << copyAssignOperDog.getThought(0) << std::endl;
+
+	cat.changeThought(0, "SAVE");
+	std::cout << cat.getThought(0) << std::endl;
+	Cat copyConstCat(cat);
+	cat.changeThought(0, "EAT");
+	std::cout << copyConstCat.getThought(0) << std::endl;
+	Cat copyAssignOperCat;
+	copyAssignOperCat = copyConstCat;
+	copyConstCat.changeThought(0, "EAT");
+	std::cout << copyAssignOperCat.getThought(0) << std::endl;
 }
 
 int main()
 {
-	test_normal();
-	test_abnormal();
-//	system("leaks ex00");
+	test_dynamic();
+	test_static();
+	system("leaks ex01");
 	return 0;
 }
