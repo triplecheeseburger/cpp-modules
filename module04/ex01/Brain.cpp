@@ -37,12 +37,14 @@ Brain::Brain(const Brain &origin)
 {
 	for (int i = 0; i < CAPACITY; i++)
 		ideas[i] = origin.ideas[i];
+	std::cout << "Brain Copy Constructor has been called." << std::endl;
 }
 
 Brain &Brain::operator=(const Brain &origin)
 {
 	for (int i = 0; i < CAPACITY; i++)
 		ideas[i] = origin.ideas[i];
+	std::cout << "Brain Copy Assignment Operator has been called." << std::endl;
 	return (*this);
 }
 
