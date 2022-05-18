@@ -37,6 +37,46 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="ex02">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex02/fast">
+				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/ex02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex02/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ex01">
 				<Option output="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug/ex01" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/cmake-build-debug"/>
@@ -177,6 +217,33 @@
 		</Unit>
 		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex01/main.cpp">
 			<Option target="ex01"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Animal.cpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Animal.hpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Brain.cpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Brain.hpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Cat.cpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Cat.hpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Dog.cpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/Dog.hpp">
+			<Option target="ex02"/>
+		</Unit>
+		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/ex02/main.cpp">
+			<Option target="ex02"/>
 		</Unit>
 		<Unit filename="/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

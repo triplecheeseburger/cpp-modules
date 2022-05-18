@@ -27,3 +27,15 @@ add_executable(ex01
         ex01/Brain.hpp
         ex01/Brain.cpp)
 
+add_executable(ex02
+        ex02/Animal.cpp
+        ex02/Animal.hpp
+        ex02/Cat.cpp
+        ex02/Cat.hpp
+        ex02/Dog.cpp
+        ex02/Dog.hpp
+        ex02/main.cpp
+        ex02/Brain.hpp
+        ex02/Brain.cpp)
+
+

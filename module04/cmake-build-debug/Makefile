@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ex02
+
+# Build rule for target.
+ex02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex02
+.PHONY : ex02
+
+# fast build rule for target.
+ex02/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/build
+.PHONY : ex02/fast
+
+#=============================================================================
 # Target rules for targets named ex01
 
 # Build rule for target.
@@ -406,6 +419,126 @@ ex01/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex01.dir/build.make CMakeFiles/ex01.dir/ex01/main.cpp.s
 .PHONY : ex01/main.cpp.s
 
+ex02/Animal.o: ex02/Animal.cpp.o
+.PHONY : ex02/Animal.o
+
+# target to build an object file
+ex02/Animal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Animal.cpp.o
+.PHONY : ex02/Animal.cpp.o
+
+ex02/Animal.i: ex02/Animal.cpp.i
+.PHONY : ex02/Animal.i
+
+# target to preprocess a source file
+ex02/Animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Animal.cpp.i
+.PHONY : ex02/Animal.cpp.i
+
+ex02/Animal.s: ex02/Animal.cpp.s
+.PHONY : ex02/Animal.s
+
+# target to generate assembly for a file
+ex02/Animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Animal.cpp.s
+.PHONY : ex02/Animal.cpp.s
+
+ex02/Brain.o: ex02/Brain.cpp.o
+.PHONY : ex02/Brain.o
+
+# target to build an object file
+ex02/Brain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Brain.cpp.o
+.PHONY : ex02/Brain.cpp.o
+
+ex02/Brain.i: ex02/Brain.cpp.i
+.PHONY : ex02/Brain.i
+
+# target to preprocess a source file
+ex02/Brain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Brain.cpp.i
+.PHONY : ex02/Brain.cpp.i
+
+ex02/Brain.s: ex02/Brain.cpp.s
+.PHONY : ex02/Brain.s
+
+# target to generate assembly for a file
+ex02/Brain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Brain.cpp.s
+.PHONY : ex02/Brain.cpp.s
+
+ex02/Cat.o: ex02/Cat.cpp.o
+.PHONY : ex02/Cat.o
+
+# target to build an object file
+ex02/Cat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Cat.cpp.o
+.PHONY : ex02/Cat.cpp.o
+
+ex02/Cat.i: ex02/Cat.cpp.i
+.PHONY : ex02/Cat.i
+
+# target to preprocess a source file
+ex02/Cat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Cat.cpp.i
+.PHONY : ex02/Cat.cpp.i
+
+ex02/Cat.s: ex02/Cat.cpp.s
+.PHONY : ex02/Cat.s
+
+# target to generate assembly for a file
+ex02/Cat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Cat.cpp.s
+.PHONY : ex02/Cat.cpp.s
+
+ex02/Dog.o: ex02/Dog.cpp.o
+.PHONY : ex02/Dog.o
+
+# target to build an object file
+ex02/Dog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Dog.cpp.o
+.PHONY : ex02/Dog.cpp.o
+
+ex02/Dog.i: ex02/Dog.cpp.i
+.PHONY : ex02/Dog.i
+
+# target to preprocess a source file
+ex02/Dog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Dog.cpp.i
+.PHONY : ex02/Dog.cpp.i
+
+ex02/Dog.s: ex02/Dog.cpp.s
+.PHONY : ex02/Dog.s
+
+# target to generate assembly for a file
+ex02/Dog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/Dog.cpp.s
+.PHONY : ex02/Dog.cpp.s
+
+ex02/main.o: ex02/main.cpp.o
+.PHONY : ex02/main.o
+
+# target to build an object file
+ex02/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/main.cpp.o
+.PHONY : ex02/main.cpp.o
+
+ex02/main.i: ex02/main.cpp.i
+.PHONY : ex02/main.i
+
+# target to preprocess a source file
+ex02/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/main.cpp.i
+.PHONY : ex02/main.cpp.i
+
+ex02/main.s: ex02/main.cpp.s
+.PHONY : ex02/main.s
+
+# target to generate assembly for a file
+ex02/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/main.cpp.s
+.PHONY : ex02/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -416,6 +549,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ex00"
 	@echo "... ex01"
+	@echo "... ex02"
 	@echo "... ex00/Animal.o"
 	@echo "... ex00/Animal.i"
 	@echo "... ex00/Animal.s"
@@ -449,6 +583,21 @@ help:
 	@echo "... ex01/main.o"
 	@echo "... ex01/main.i"
 	@echo "... ex01/main.s"
+	@echo "... ex02/Animal.o"
+	@echo "... ex02/Animal.i"
+	@echo "... ex02/Animal.s"
+	@echo "... ex02/Brain.o"
+	@echo "... ex02/Brain.i"
+	@echo "... ex02/Brain.s"
+	@echo "... ex02/Cat.o"
+	@echo "... ex02/Cat.i"
+	@echo "... ex02/Cat.s"
+	@echo "... ex02/Dog.o"
+	@echo "... ex02/Dog.i"
+	@echo "... ex02/Dog.s"
+	@echo "... ex02/main.o"
+	@echo "... ex02/main.i"
+	@echo "... ex02/main.s"
 .PHONY : help
 
 
