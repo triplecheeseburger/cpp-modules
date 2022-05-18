@@ -40,31 +40,41 @@ std::string Contact::get_darkest_secret()
 void Contact::set_first_name()
 {
 	std::cout << "first name: ";
-	std::cin >> first_name_;
+	std::getline(std::cin, first_name_);
+	if (first_name_.length() <= 0)
+		set_first_name();
 }
 
 void Contact::set_last_name()
 {
 	std::cout << "last name: ";
-	std::cin >> last_name_;
+	std::getline(std::cin, last_name_);
+	if (last_name_.length() <= 0)
+			set_last_name();
 }
 
 void Contact::set_nickname()
 {
 	std::cout << "nickname: ";
-	std::cin >> nickname_;
+	std::getline(std::cin, nickname_);
+	if (nickname_.length() <= 0)
+		set_nickname();
 }
 
 void Contact::set_phone_number()
 {
 	std::cout << "phone number: ";
-	std::cin >> phone_number_;
+	std::getline(std::cin, phone_number_);
+	if (phone_number_.length() <= 0)
+		set_phone_number();
 }
 
 void Contact::set_darkest_secret()
 {
 	std::cout << "darkest secret: ";
-	std::cin >> darkest_secret_;
+	std::getline(std::cin, darkest_secret_);
+	if (darkest_secret_.length() <= 0)
+		set_darkest_secret();
 }
 
 Contact::Contact() {}

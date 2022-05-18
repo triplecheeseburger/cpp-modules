@@ -21,7 +21,7 @@ int main()
 	while (!std::cin.eof())
 	{
 		std::cout << "Command List:   1. ADD   2. SEARCH   3. EXIT   ==>  ";
-		std::cin >> cmd;
+		std::getline(std::cin, cmd);
 		if (cmd == "EXIT")
 			break ;
 		else if (cmd == "ADD")
