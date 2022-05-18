@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/199BD1CF-D5ED-41E9-AD5F-E524D5D40412/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/199BD1CF-D5ED-41E9-AD5F-E524D5D40412/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hakim/cpp-modules/module00
+CMAKE_SOURCE_DIR = /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hakim/cpp-modules/module00/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ex02.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/ex02.dir/flags.make
 CMakeFiles/ex02.dir/ex02/Account.cpp.o: CMakeFiles/ex02.dir/flags.make
 CMakeFiles/ex02.dir/ex02/Account.cpp.o: ../ex02/Account.cpp
 CMakeFiles/ex02.dir/ex02/Account.cpp.o: CMakeFiles/ex02.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hakim/cpp-modules/module00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex02.dir/ex02/Account.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex02.dir/ex02/Account.cpp.o -MF CMakeFiles/ex02.dir/ex02/Account.cpp.o.d -o CMakeFiles/ex02.dir/ex02/Account.cpp.o -c /Users/hakim/cpp-modules/module00/ex02/Account.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex02.dir/ex02/Account.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex02.dir/ex02/Account.cpp.o -MF CMakeFiles/ex02.dir/ex02/Account.cpp.o.d -o CMakeFiles/ex02.dir/ex02/Account.cpp.o -c /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/ex02/Account.cpp
 
 CMakeFiles/ex02.dir/ex02/Account.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex02.dir/ex02/Account.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hakim/cpp-modules/module00/ex02/Account.cpp > CMakeFiles/ex02.dir/ex02/Account.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/ex02/Account.cpp > CMakeFiles/ex02.dir/ex02/Account.cpp.i
 
 CMakeFiles/ex02.dir/ex02/Account.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex02.dir/ex02/Account.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hakim/cpp-modules/module00/ex02/Account.cpp -o CMakeFiles/ex02.dir/ex02/Account.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/ex02/Account.cpp -o CMakeFiles/ex02.dir/ex02/Account.cpp.s
 
 CMakeFiles/ex02.dir/ex02/tests.cpp.o: CMakeFiles/ex02.dir/flags.make
 CMakeFiles/ex02.dir/ex02/tests.cpp.o: ../ex02/tests.cpp
 CMakeFiles/ex02.dir/ex02/tests.cpp.o: CMakeFiles/ex02.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hakim/cpp-modules/module00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex02.dir/ex02/tests.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex02.dir/ex02/tests.cpp.o -MF CMakeFiles/ex02.dir/ex02/tests.cpp.o.d -o CMakeFiles/ex02.dir/ex02/tests.cpp.o -c /Users/hakim/cpp-modules/module00/ex02/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex02.dir/ex02/tests.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ex02.dir/ex02/tests.cpp.o -MF CMakeFiles/ex02.dir/ex02/tests.cpp.o.d -o CMakeFiles/ex02.dir/ex02/tests.cpp.o -c /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/ex02/tests.cpp
 
 CMakeFiles/ex02.dir/ex02/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex02.dir/ex02/tests.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hakim/cpp-modules/module00/ex02/tests.cpp > CMakeFiles/ex02.dir/ex02/tests.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/ex02/tests.cpp > CMakeFiles/ex02.dir/ex02/tests.cpp.i
 
 CMakeFiles/ex02.dir/ex02/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex02.dir/ex02/tests.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hakim/cpp-modules/module00/ex02/tests.cpp -o CMakeFiles/ex02.dir/ex02/tests.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/ex02/tests.cpp -o CMakeFiles/ex02.dir/ex02/tests.cpp.s
 
 # Object files for target ex02
 ex02_OBJECTS = \
@@ -109,7 +109,7 @@ ex02: CMakeFiles/ex02.dir/ex02/Account.cpp.o
 ex02: CMakeFiles/ex02.dir/ex02/tests.cpp.o
 ex02: CMakeFiles/ex02.dir/build.make
 ex02: CMakeFiles/ex02.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hakim/cpp-modules/module00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ex02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ex02"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex02.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/ex02.dir/clean:
 .PHONY : CMakeFiles/ex02.dir/clean
 
 CMakeFiles/ex02.dir/depend:
-	cd /Users/hakim/cpp-modules/module00/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hakim/cpp-modules/module00 /Users/hakim/cpp-modules/module00 /Users/hakim/cpp-modules/module00/cmake-build-debug /Users/hakim/cpp-modules/module00/cmake-build-debug /Users/hakim/cpp-modules/module00/cmake-build-debug/CMakeFiles/ex02.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00 /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00 /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module00/cmake-build-debug/CMakeFiles/ex02.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ex02.dir/depend
 

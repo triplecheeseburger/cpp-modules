@@ -117,8 +117,12 @@ void PhoneBook::Search()
 		if (show_index < 1 || show_index > std::min(index, 8))
 		{
 			std::cout << "You should type index between 1 and " << std::min(index, 8) << std::endl;
+			std::cin.clear();
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 			continue ;
 		}
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		break ;
 	}
 	--show_index;
