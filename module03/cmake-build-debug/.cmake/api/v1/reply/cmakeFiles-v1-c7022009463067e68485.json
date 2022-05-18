@@ -733,8 +733,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/hakim/cpp-modules/module04/cmake-build-debug",
-		"source" : "/Users/hakim/cpp-modules/module04"
+		"build" : "/Users/hakim/cpp-modules/module03/cmake-build-debug",
+		"source" : "/Users/hakim/cpp-modules/module03"
 	},
 	"version" : 
 	{

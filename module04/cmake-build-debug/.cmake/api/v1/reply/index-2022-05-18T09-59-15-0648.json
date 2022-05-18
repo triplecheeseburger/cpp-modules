@@ -4,14 +4,14 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "Unix Makefiles"
+			"name" : "Ninja"
 		},
 		"paths" : 
 		{
-			"cmake" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/F8E7AB84-95A2-4F62-8E1F-D64218595F00/d/CLion.app/Contents/bin/cmake/mac/bin/cmake",
-			"cpack" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/F8E7AB84-95A2-4F62-8E1F-D64218595F00/d/CLion.app/Contents/bin/cmake/mac/bin/cpack",
-			"ctest" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/F8E7AB84-95A2-4F62-8E1F-D64218595F00/d/CLion.app/Contents/bin/cmake/mac/bin/ctest",
-			"root" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/F8E7AB84-95A2-4F62-8E1F-D64218595F00/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21"
+			"cmake" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/199BD1CF-D5ED-41E9-AD5F-E524D5D40412/d/CLion.app/Contents/bin/cmake/mac/bin/cmake",
+			"cpack" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/199BD1CF-D5ED-41E9-AD5F-E524D5D40412/d/CLion.app/Contents/bin/cmake/mac/bin/cpack",
+			"ctest" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/199BD1CF-D5ED-41E9-AD5F-E524D5D40412/d/CLion.app/Contents/bin/cmake/mac/bin/ctest",
+			"root" : "/private/var/folders/zz/zyxvpxvq6csfxvn_n000clmh0034x4/T/AppTranslocation/199BD1CF-D5ED-41E9-AD5F-E524D5D40412/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-cd904fc08206b6b188ae.json",
+			"jsonFile" : "codemodel-v2-fec21ecca30bde722fae.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-45d1ac144daec585cabc.json",
+			"jsonFile" : "cache-v2-15b684aef7f1a82916fd.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-a12044756136f53e19f2.json",
+			"jsonFile" : "cmakeFiles-v1-63f5431334c3ee656636.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-45d1ac144daec585cabc.json",
+			"jsonFile" : "cache-v2-15b684aef7f1a82916fd.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-a12044756136f53e19f2.json",
+			"jsonFile" : "cmakeFiles-v1-63f5431334c3ee656636.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-cd904fc08206b6b188ae.json",
+			"jsonFile" : "codemodel-v2-fec21ecca30bde722fae.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
