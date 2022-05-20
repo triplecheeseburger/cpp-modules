@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module04/c
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -84,6 +74,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -115,6 +115,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named ex03
+
+# Build rule for target.
+ex03: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex03
+.PHONY : ex03
+
+# fast build rule for target.
+ex03/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/build
+.PHONY : ex03/fast
 
 #=============================================================================
 # Target rules for targets named ex02
@@ -539,6 +552,150 @@ ex02/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex02.dir/build.make CMakeFiles/ex02.dir/ex02/main.cpp.s
 .PHONY : ex02/main.cpp.s
 
+ex03/AMateria.o: ex03/AMateria.cpp.o
+.PHONY : ex03/AMateria.o
+
+# target to build an object file
+ex03/AMateria.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/AMateria.cpp.o
+.PHONY : ex03/AMateria.cpp.o
+
+ex03/AMateria.i: ex03/AMateria.cpp.i
+.PHONY : ex03/AMateria.i
+
+# target to preprocess a source file
+ex03/AMateria.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/AMateria.cpp.i
+.PHONY : ex03/AMateria.cpp.i
+
+ex03/AMateria.s: ex03/AMateria.cpp.s
+.PHONY : ex03/AMateria.s
+
+# target to generate assembly for a file
+ex03/AMateria.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/AMateria.cpp.s
+.PHONY : ex03/AMateria.cpp.s
+
+ex03/Character.o: ex03/Character.cpp.o
+.PHONY : ex03/Character.o
+
+# target to build an object file
+ex03/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Character.cpp.o
+.PHONY : ex03/Character.cpp.o
+
+ex03/Character.i: ex03/Character.cpp.i
+.PHONY : ex03/Character.i
+
+# target to preprocess a source file
+ex03/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Character.cpp.i
+.PHONY : ex03/Character.cpp.i
+
+ex03/Character.s: ex03/Character.cpp.s
+.PHONY : ex03/Character.s
+
+# target to generate assembly for a file
+ex03/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Character.cpp.s
+.PHONY : ex03/Character.cpp.s
+
+ex03/Cure.o: ex03/Cure.cpp.o
+.PHONY : ex03/Cure.o
+
+# target to build an object file
+ex03/Cure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Cure.cpp.o
+.PHONY : ex03/Cure.cpp.o
+
+ex03/Cure.i: ex03/Cure.cpp.i
+.PHONY : ex03/Cure.i
+
+# target to preprocess a source file
+ex03/Cure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Cure.cpp.i
+.PHONY : ex03/Cure.cpp.i
+
+ex03/Cure.s: ex03/Cure.cpp.s
+.PHONY : ex03/Cure.s
+
+# target to generate assembly for a file
+ex03/Cure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Cure.cpp.s
+.PHONY : ex03/Cure.cpp.s
+
+ex03/Ice.o: ex03/Ice.cpp.o
+.PHONY : ex03/Ice.o
+
+# target to build an object file
+ex03/Ice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Ice.cpp.o
+.PHONY : ex03/Ice.cpp.o
+
+ex03/Ice.i: ex03/Ice.cpp.i
+.PHONY : ex03/Ice.i
+
+# target to preprocess a source file
+ex03/Ice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Ice.cpp.i
+.PHONY : ex03/Ice.cpp.i
+
+ex03/Ice.s: ex03/Ice.cpp.s
+.PHONY : ex03/Ice.s
+
+# target to generate assembly for a file
+ex03/Ice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/Ice.cpp.s
+.PHONY : ex03/Ice.cpp.s
+
+ex03/MateriaSource.o: ex03/MateriaSource.cpp.o
+.PHONY : ex03/MateriaSource.o
+
+# target to build an object file
+ex03/MateriaSource.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/MateriaSource.cpp.o
+.PHONY : ex03/MateriaSource.cpp.o
+
+ex03/MateriaSource.i: ex03/MateriaSource.cpp.i
+.PHONY : ex03/MateriaSource.i
+
+# target to preprocess a source file
+ex03/MateriaSource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/MateriaSource.cpp.i
+.PHONY : ex03/MateriaSource.cpp.i
+
+ex03/MateriaSource.s: ex03/MateriaSource.cpp.s
+.PHONY : ex03/MateriaSource.s
+
+# target to generate assembly for a file
+ex03/MateriaSource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/MateriaSource.cpp.s
+.PHONY : ex03/MateriaSource.cpp.s
+
+ex03/main.o: ex03/main.cpp.o
+.PHONY : ex03/main.o
+
+# target to build an object file
+ex03/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/main.cpp.o
+.PHONY : ex03/main.cpp.o
+
+ex03/main.i: ex03/main.cpp.i
+.PHONY : ex03/main.i
+
+# target to preprocess a source file
+ex03/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/main.cpp.i
+.PHONY : ex03/main.cpp.i
+
+ex03/main.s: ex03/main.cpp.s
+.PHONY : ex03/main.s
+
+# target to generate assembly for a file
+ex03/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex03.dir/build.make CMakeFiles/ex03.dir/ex03/main.cpp.s
+.PHONY : ex03/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -550,6 +707,7 @@ help:
 	@echo "... ex00"
 	@echo "... ex01"
 	@echo "... ex02"
+	@echo "... ex03"
 	@echo "... ex00/Animal.o"
 	@echo "... ex00/Animal.i"
 	@echo "... ex00/Animal.s"
@@ -598,6 +756,24 @@ help:
 	@echo "... ex02/main.o"
 	@echo "... ex02/main.i"
 	@echo "... ex02/main.s"
+	@echo "... ex03/AMateria.o"
+	@echo "... ex03/AMateria.i"
+	@echo "... ex03/AMateria.s"
+	@echo "... ex03/Character.o"
+	@echo "... ex03/Character.i"
+	@echo "... ex03/Character.s"
+	@echo "... ex03/Cure.o"
+	@echo "... ex03/Cure.i"
+	@echo "... ex03/Cure.s"
+	@echo "... ex03/Ice.o"
+	@echo "... ex03/Ice.i"
+	@echo "... ex03/Ice.s"
+	@echo "... ex03/MateriaSource.o"
+	@echo "... ex03/MateriaSource.i"
+	@echo "... ex03/MateriaSource.s"
+	@echo "... ex03/main.o"
+	@echo "... ex03/main.i"
+	@echo "... ex03/main.s"
 .PHONY : help
 
 

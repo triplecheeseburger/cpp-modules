@@ -38,4 +38,19 @@ add_executable(ex02
         ex02/Brain.hpp
         ex02/Brain.cpp)
 
+add_executable(ex03
+        ex03/AMateria.hpp
+        ex03/Character.hpp
+        ex03/Cure.hpp
+        ex03/Ice.hpp
+        ex03/ICharacter.hpp
+        ex03/IMateriaSource.hpp
+        ex03/MateriaSource.hpp
+        ex03/main.cpp
+        ex03/AMateria.cpp
+        ex03/Character.cpp
+        ex03/Cure.cpp
+        ex03/Ice.cpp
+        ex03/MateriaSource.cpp)
+
 
