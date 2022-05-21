@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.21)
+project(module05)
+
+set(CMAKE_CXX_STANDARD 98)
+
+add_executable(ex00
+        ex00/Bureaucrat.cpp
+        ex00/Bureaucrat.hpp
+        ex00/main.cpp)
