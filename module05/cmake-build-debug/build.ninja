@@ -42,6 +42,145 @@ include CMakeFiles/rules.ninja
 cmake_ninja_workdir = /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/cmake-build-debug/
 
 #############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ex03
+
+
+#############################################
+# Order-only phony target for ex03
+
+build cmake_object_order_depends_target_ex03: phony || CMakeFiles/ex03.dir
+
+build CMakeFiles/ex03.dir/ex03/Bureaucrat.cpp.o: CXX_COMPILER__ex03_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex03/Bureaucrat.cpp || cmake_object_order_depends_target_ex03
+  DEP_FILE = CMakeFiles/ex03.dir/ex03/Bureaucrat.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex03.dir/ex03
+
+build CMakeFiles/ex03.dir/ex03/Form.cpp.o: CXX_COMPILER__ex03_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex03/Form.cpp || cmake_object_order_depends_target_ex03
+  DEP_FILE = CMakeFiles/ex03.dir/ex03/Form.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex03.dir/ex03
+
+build CMakeFiles/ex03.dir/ex03/ShrubberyCreationForm.cpp.o: CXX_COMPILER__ex03_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex03/ShrubberyCreationForm.cpp || cmake_object_order_depends_target_ex03
+  DEP_FILE = CMakeFiles/ex03.dir/ex03/ShrubberyCreationForm.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex03.dir/ex03
+
+build CMakeFiles/ex03.dir/ex03/PresidentialPardonForm.cpp.o: CXX_COMPILER__ex03_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex03/PresidentialPardonForm.cpp || cmake_object_order_depends_target_ex03
+  DEP_FILE = CMakeFiles/ex03.dir/ex03/PresidentialPardonForm.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex03.dir/ex03
+
+build CMakeFiles/ex03.dir/ex03/RobotomyRequestForm.cpp.o: CXX_COMPILER__ex03_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex03/RobotomyRequestForm.cpp || cmake_object_order_depends_target_ex03
+  DEP_FILE = CMakeFiles/ex03.dir/ex03/RobotomyRequestForm.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex03.dir/ex03
+
+build CMakeFiles/ex03.dir/ex03/Intern.cpp.o: CXX_COMPILER__ex03_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex03/Intern.cpp || cmake_object_order_depends_target_ex03
+  DEP_FILE = CMakeFiles/ex03.dir/ex03/Intern.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex03.dir/ex03
+
+build CMakeFiles/ex03.dir/ex03/main.cpp.o: CXX_COMPILER__ex03_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex03/main.cpp || cmake_object_order_depends_target_ex03
+  DEP_FILE = CMakeFiles/ex03.dir/ex03/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex03.dir/ex03
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex03
+
+
+#############################################
+# Link the executable ex03
+
+build ex03: CXX_EXECUTABLE_LINKER__ex03_Debug CMakeFiles/ex03.dir/ex03/Bureaucrat.cpp.o CMakeFiles/ex03.dir/ex03/Form.cpp.o CMakeFiles/ex03.dir/ex03/ShrubberyCreationForm.cpp.o CMakeFiles/ex03.dir/ex03/PresidentialPardonForm.cpp.o CMakeFiles/ex03.dir/ex03/RobotomyRequestForm.cpp.o CMakeFiles/ex03.dir/ex03/Intern.cpp.o CMakeFiles/ex03.dir/ex03/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ex03.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ex03
+  TARGET_PDB = ex03.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ex02
+
+
+#############################################
+# Order-only phony target for ex02
+
+build cmake_object_order_depends_target_ex02: phony || CMakeFiles/ex02.dir
+
+build CMakeFiles/ex02.dir/ex02/Bureaucrat.cpp.o: CXX_COMPILER__ex02_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex02/Bureaucrat.cpp || cmake_object_order_depends_target_ex02
+  DEP_FILE = CMakeFiles/ex02.dir/ex02/Bureaucrat.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex02.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex02.dir/ex02
+
+build CMakeFiles/ex02.dir/ex02/Form.cpp.o: CXX_COMPILER__ex02_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex02/Form.cpp || cmake_object_order_depends_target_ex02
+  DEP_FILE = CMakeFiles/ex02.dir/ex02/Form.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex02.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex02.dir/ex02
+
+build CMakeFiles/ex02.dir/ex02/ShrubberyCreationForm.cpp.o: CXX_COMPILER__ex02_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex02/ShrubberyCreationForm.cpp || cmake_object_order_depends_target_ex02
+  DEP_FILE = CMakeFiles/ex02.dir/ex02/ShrubberyCreationForm.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex02.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex02.dir/ex02
+
+build CMakeFiles/ex02.dir/ex02/PresidentialPardonForm.cpp.o: CXX_COMPILER__ex02_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex02/PresidentialPardonForm.cpp || cmake_object_order_depends_target_ex02
+  DEP_FILE = CMakeFiles/ex02.dir/ex02/PresidentialPardonForm.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex02.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex02.dir/ex02
+
+build CMakeFiles/ex02.dir/ex02/RobotomyRequestForm.cpp.o: CXX_COMPILER__ex02_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex02/RobotomyRequestForm.cpp || cmake_object_order_depends_target_ex02
+  DEP_FILE = CMakeFiles/ex02.dir/ex02/RobotomyRequestForm.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex02.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex02.dir/ex02
+
+build CMakeFiles/ex02.dir/ex02/main.cpp.o: CXX_COMPILER__ex02_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex02/main.cpp || cmake_object_order_depends_target_ex02
+  DEP_FILE = CMakeFiles/ex02.dir/ex02/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex02.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex02.dir/ex02
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex02
+
+
+#############################################
+# Link the executable ex02
+
+build ex02: CXX_EXECUTABLE_LINKER__ex02_Debug CMakeFiles/ex02.dir/ex02/Bureaucrat.cpp.o CMakeFiles/ex02.dir/ex02/Form.cpp.o CMakeFiles/ex02.dir/ex02/ShrubberyCreationForm.cpp.o CMakeFiles/ex02.dir/ex02/PresidentialPardonForm.cpp.o CMakeFiles/ex02.dir/ex02/RobotomyRequestForm.cpp.o CMakeFiles/ex02.dir/ex02/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ex02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ex02
+  TARGET_PDB = ex02.dbg
+
+
+#############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
@@ -52,16 +191,48 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ex01
+
 
 #############################################
-# Utility command for edit_cache
+# Order-only phony target for ex01
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
+build cmake_object_order_depends_target_ex01: phony || CMakeFiles/ex01.dir
 
-build edit_cache: phony CMakeFiles/edit_cache.util
+build CMakeFiles/ex01.dir/ex01/Bureaucrat.cpp.o: CXX_COMPILER__ex01_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex01/Bureaucrat.cpp || cmake_object_order_depends_target_ex01
+  DEP_FILE = CMakeFiles/ex01.dir/ex01/Bureaucrat.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex01.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex01.dir/ex01
+
+build CMakeFiles/ex01.dir/ex01/Form.cpp.o: CXX_COMPILER__ex01_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex01/Form.cpp || cmake_object_order_depends_target_ex01
+  DEP_FILE = CMakeFiles/ex01.dir/ex01/Form.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex01.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex01.dir/ex01
+
+build CMakeFiles/ex01.dir/ex01/main.cpp.o: CXX_COMPILER__ex01_Debug /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/ex01/main.cpp || cmake_object_order_depends_target_ex01
+  DEP_FILE = CMakeFiles/ex01.dir/ex01/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex01.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex01.dir/ex01
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex01
+
+
+#############################################
+# Link the executable ex01
+
+build ex01: CXX_EXECUTABLE_LINKER__ex01_Debug CMakeFiles/ex01.dir/ex01/Bureaucrat.cpp.o CMakeFiles/ex01.dir/ex01/Form.cpp.o CMakeFiles/ex01.dir/ex01/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ex01.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ex01
+  TARGET_PDB = ex01.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target ex00
@@ -111,7 +282,7 @@ build ex00: CXX_EXECUTABLE_LINKER__ex00_Debug CMakeFiles/ex00.dir/ex00/Bureaucra
 #############################################
 # Folder: /Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module05/cmake-build-debug
 
-build all: phony ex00
+build all: phony ex03 ex02 ex01 ex00
 
 # =============================================================================
 # Built-in targets

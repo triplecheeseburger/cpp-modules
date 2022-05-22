@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 const std::string &Bureaucrat::getName() const
 {
@@ -57,6 +57,17 @@ Bureaucrat &Bureaucrat::operator=(const Bureaucrat &origin)
 }
 
 Bureaucrat::~Bureaucrat() {}
+
+void Bureaucrat::signForm(Form &form) const
+{
+	try {
+		form.beSigned(*this);
+		std::cout << name << " signed " << form.getName() << "." << std::endl;
+	} catch (std::exception & e) {
+		std::cerr << name << " couldn't sign " << form.getName() << " because "
+				  << e.what() << std::endl;
+	}
+}
 
 const char *Bureaucrat::GradeTooHighException::what() const throw()
 {

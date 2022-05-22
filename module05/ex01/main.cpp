@@ -11,43 +11,28 @@
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 int main(void)
 {
 	Bureaucrat hakim = Bureaucrat("hakim", 5);
-	Bureaucrat amugae = Bureaucrat();
-	Bureaucrat copy_hakim = Bureaucrat(hakim);
-	Bureaucrat assign_hakim = Bureaucrat();
-
-	assign_hakim = hakim;
-	std::cout << amugae << std::endl;
-	std::cout << "copy_hakim: " << copy_hakim << std::endl;
-	std::cout << "assign_hakim: " << assign_hakim << std::endl;
-
+	Form form1 = Form("form1", 10, 10);
+	Form form2 = Form("form2", 1, 1);
+	std::cout << hakim << std::endl;
+	std::cout << form1 << std::endl;
+	std::cout << form2 << std::endl;
 	try {
-		std::cout << "START" << std::endl;
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << "can I reach here?" << std::endl;
-	} catch (std::exception& e) {
+		Form form3 = Form("form3", 0, 1);
+		Form form4 = Form("form4", 151, 1);
+	} catch (std::exception & e) {
 		std::cerr << e.what() << std::endl;
 	}
-	std::cout << "copy_hakim: " << copy_hakim << std::endl;
-	std::cout << "assign_hakim: " << assign_hakim << std::endl;
 	try {
-		std::cout << "START" << std::endl;
-		std::cout << amugae << std::endl;
-		amugae.gradeMinusMinus();
-		std::cout << "can I reach here?" << std::endl;
-	} catch (std::exception& e) {
+		hakim.signForm(form1);
+		std::cout << form1 << std::endl;
+		hakim.signForm(form2);
+		std::cout << form2 << std::endl;
+	} catch (std::exception & e) {
 		std::cerr << e.what() << std::endl;
 	}
 	return 0;

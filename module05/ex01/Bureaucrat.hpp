@@ -16,6 +16,8 @@
 # include <exception>
 # include <iostream>
 
+class Form;
+
 class Bureaucrat {
 
 private:
@@ -30,6 +32,7 @@ public:
 	int 				getGrade() const;
 	void 				gradePlusPlus();
 	void 				gradeMinusMinus();
+	void 				signForm(Form& form) const;
 
 	Bureaucrat();
 	Bureaucrat(const std::string &name, int grade);
