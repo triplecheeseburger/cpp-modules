@@ -19,11 +19,11 @@ void PresidentialPardonForm::execute(const Bureaucrat &bureaucrat) const
 }
 
 PresidentialPardonForm::PresidentialPardonForm():
-		Form("PresidentialPardonForm", grade_to_be_signed, grade_to_be_executed), target("No Target")
+		Form("PresidentialPardonForm", PARDON_GRADE_TO_BE_SIGNED, PARDON_GRADE_TO_BE_EXECED), target("No Target")
 {}
 
 PresidentialPardonForm::PresidentialPardonForm(const std::string &target):
-		Form("PresidentialPardonForm", grade_to_be_signed, grade_to_be_executed), target(target)
+		Form("PresidentialPardonForm", PARDON_GRADE_TO_BE_SIGNED, PARDON_GRADE_TO_BE_EXECED), target(target)
 {}
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &origin):

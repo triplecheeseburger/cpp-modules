@@ -23,11 +23,11 @@ void RobotomyRequestForm::execute(const Bureaucrat &bureaucrat) const
 }
 
 RobotomyRequestForm::RobotomyRequestForm():
-		Form("RobotomyRequestForm", grade_to_be_signed, grade_to_be_executed), target("No Target")
+		Form("RobotomyRequestForm", ROBOTOMY_GRADE_TO_BE_SIGNED, ROBOTOMY_GRADE_TO_BE_EXECED), target("No Target")
 {}
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string &target):
-		Form("RobotomyRequestForm", grade_to_be_signed, grade_to_be_executed), target(target)
+		Form("RobotomyRequestForm", ROBOTOMY_GRADE_TO_BE_SIGNED, ROBOTOMY_GRADE_TO_BE_EXECED), target(target)
 {}
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &origin):

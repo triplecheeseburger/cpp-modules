@@ -10,43 +10,38 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Bureaucrat.hpp"
+#include "ShrubberyCreationForm.hpp"
+#include "RobotomyRequestForm.hpp"
+#include "PresidentialPardonForm.hpp"
 
 int main(void)
 {
-	Bureaucrat hakim = Bureaucrat("hakim", 5);
-	Bureaucrat amugae = Bureaucrat();
-	Bureaucrat copy_hakim = Bureaucrat(hakim);
-	Bureaucrat assign_hakim = Bureaucrat();
+	Bureaucrat hakim = Bureaucrat("hakim", 75);
+	Bureaucrat ford = Bureaucrat("Ford Prefect", 150);
+	Bureaucrat arthur = Bureaucrat("Arthur Dent", 1);
 
-	assign_hakim = hakim;
-	std::cout << amugae << std::endl;
-	std::cout << "copy_hakim: " << copy_hakim << std::endl;
-	std::cout << "assign_hakim: " << assign_hakim << std::endl;
+	ShrubberyCreationForm scf1("my home");
+	Form* scf2 = new ShrubberyCreationForm("hakim's home");
+	RobotomyRequestForm rrf1("my home");
+	Form* rrf2 = new RobotomyRequestForm("hakim's home");
+	PresidentialPardonForm ppf1("my home");
+	Form* ppf2 = new PresidentialPardonForm("hakim's home");
+
+	arthur.signForm(scf1);
+	std::cout << (scf1.getIsSigned() ? "true" : "false") << std::endl;
+	arthur.signForm(*scf2);
+	std::cout << (scf2->getIsSigned() ? "true" : "false") << std::endl;
+	arthur.signForm(rrf1);
+	std::cout << (rrf1.getIsSigned() ? "true" : "false") << std::endl;
+	arthur.signForm(*rrf2);
+	std::cout << (rrf2->getIsSigned() ? "true" : "false") << std::endl;
+	arthur.signForm(ppf1);
+	std::cout << (ppf1.getIsSigned() ? "true" : "false") << std::endl;
+	arthur.signForm(*ppf2);
+	std::cout << (ppf2->getIsSigned() ? "true" : "false") << std::endl;
 
 	try {
-		std::cout << "START" << std::endl;
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << hakim << std::endl;
-		hakim.gradePlusPlus();
-		std::cout << "can I reach here?" << std::endl;
-	} catch (std::exception& e) {
-		std::cerr << e.what() << std::endl;
-	}
-	std::cout << "copy_hakim: " << copy_hakim << std::endl;
-	std::cout << "assign_hakim: " << assign_hakim << std::endl;
-	try {
-		std::cout << "START" << std::endl;
-		std::cout << amugae << std::endl;
-		amugae.gradeMinusMinus();
-		std::cout << "can I reach here?" << std::endl;
+
 	} catch (std::exception& e) {
 		std::cerr << e.what() << std::endl;
 	}

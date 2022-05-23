@@ -16,13 +16,13 @@
 # include <fstream>
 # include "Form.hpp"
 
+# define SHRUB_GRADE_TO_BE_SIGNED 145
+# define SHRUB_GRADE_TO_BE_EXECED 137
+
 class ShrubberyCreationForm: public Form {
 
 private:
 	std::string 		target;
-
-	static const int	grade_to_be_signed = 145;
-	static const int	grade_to_be_executed = 137;
 
 	ShrubberyCreationForm();
 

@@ -15,14 +15,14 @@
 
 # include "Form.hpp"
 
+# define PARDON_GRADE_TO_BE_SIGNED 25
+# define PARDON_GRADE_TO_BE_EXECED 5
+
 class PresidentialPardonForm: public Form
 {
 
 private:
 	std::string target;
-
-	static const int grade_to_be_signed = 25;
-	static const int grade_to_be_executed = 5;
 
 	PresidentialPardonForm();
 

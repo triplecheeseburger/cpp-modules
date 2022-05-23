@@ -16,14 +16,14 @@
 # include "Form.hpp"
 # include <cstdlib>
 
+# define ROBOTOMY_GRADE_TO_BE_SIGNED 72
+# define ROBOTOMY_GRADE_TO_BE_EXECED 45
+
 class RobotomyRequestForm: public Form
 {
 
 private:
 	std::string target;
-
-	static const int grade_to_be_signed = 72;
-	static const int grade_to_be_executed = 45;
 
 	RobotomyRequestForm();
 

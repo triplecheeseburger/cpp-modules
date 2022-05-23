@@ -36,11 +36,11 @@ void ShrubberyCreationForm::execute(const Bureaucrat &bureaucrat) const
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm():
-	Form("ShrubberyCreationForm", grade_to_be_signed, grade_to_be_executed), target("No Target")
+	Form("ShrubberyCreationForm", SHRUB_GRADE_TO_BE_SIGNED, SHRUB_GRADE_TO_BE_EXECED), target("No Target")
 {}
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target):
-	Form("ShrubberyCreationForm", grade_to_be_signed, grade_to_be_executed), target(target)
+	Form("ShrubberyCreationForm", SHRUB_GRADE_TO_BE_SIGNED, SHRUB_GRADE_TO_BE_EXECED), target(target)
 {}
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &origin):
