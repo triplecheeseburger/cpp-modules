@@ -15,6 +15,7 @@
 
 # include "Form.hpp"
 # include <cstdlib>
+# include <cmath>
 
 # define ROBOTOMY_GRADE_TO_BE_SIGNED 72
 # define ROBOTOMY_GRADE_TO_BE_EXECED 45

@@ -35,10 +35,11 @@ Form *Intern::makeForm(const std::string &form_name, const std::string &target) 
 
 Intern::Intern() {}
 
-Intern::Intern(const Intern &origin) {}
+Intern::Intern(const Intern &origin) { static_cast<void>(origin);}
 
 Intern &Intern::operator=(const Intern &origin)
 {
+	static_cast<void>(origin);
 	return *this;
 }
 
