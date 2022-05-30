@@ -24,24 +24,6 @@ void ScavTrap::attack(const std::string& target) const
 			  << std::endl;
 }
 
-void ScavTrap::takeDamage(unsigned int amount)
-{
-	if (amount == 0)
-		std::cout << "Is that all you've got?? ";
-	else
-		std::cout << "\"Oouch, It hurts!\" ";
-	std::cout << "ScavTrap " << name << " has lost " << amount << " hit points." << std::endl;
-	if (amount > hit_points)
-		this->setHP(0);
-	this->setHP(hit_points - amount);
-}
-
-void ScavTrap::beRepaired(unsigned int amount)
-{
-	std::cout << "ScavTrap " << name << " has gained " << amount << " hit points." << std::endl;
-	this->setHP(hit_points + amount);
-}
-
 void ScavTrap::printStatus() const
 {
 	std::cout << std::endl;

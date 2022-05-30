@@ -28,8 +28,6 @@ public:
 	void	guardGate(void) const;
 	void	toggleGuardmode(void);
 	void	attack(const std::string& target) const;
-	void	takeDamage(unsigned int amount);
-	void	beRepaired(unsigned int amount);
 	void	printStatus() const;
 
 	ScavTrap();
