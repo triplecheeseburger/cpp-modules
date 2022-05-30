@@ -63,7 +63,8 @@ void Character::use(int idx, ICharacter &target)
 		else
 			std::cout << name << " tried to use Materia but found nothing in slot number " << idx << "." << std::endl;
 	}
-	std::cout << "There is no slot number " << idx << " for " << name << "'s inventory."<< std::endl;
+	else
+		std::cout << "There is no slot number " << idx << " for " << name << "'s inventory."<< std::endl;
 }
 
 Character::Character(): name("")
