@@ -66,4 +66,3 @@ DiamondTrap::~DiamondTrap()
 {
 	std::cout << "DiamondTrap " << name << " Destructor has been called." << std::endl;
 }
-
