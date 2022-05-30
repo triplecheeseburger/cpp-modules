@@ -5,26 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakim <hakim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 14:52:54 by hakim             #+#    #+#             */
-/*   Updated: 2022/05/17 14:52:55 by hakim            ###   ########.fr       */
+/*   Created: 2022/05/30 00:38:05 by hakim             #+#    #+#             */
+/*   Updated: 2022/05/30 00:38:06 by hakim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "Animal.hpp"
+#include "Data.hpp"
 
-int main()
+int main(void)
 {
-//	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	Data* data = new Data;
+	Data* newData;
+	uintptr_t raw;
 
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound();
+	data->x = 72;
+	data->y = 48;
 
-	delete j;
-	delete i;
-	return 0;
+	std::cout << "Data's x: " << data->x << " y: " << data->y << std::endl;
+	raw = serialize(data);
+	std::cout << "raw:       " << std::hex << raw << std::dec << std::endl;
+	std::cout << "data:    " << data << std::endl;
+
+	newData = deserialize(raw);
+	std::cout << "newData: " << newData << std::endl;
+	std::cout << "newData's x: " << newData->x << " y: " << newData->y << std::endl;
+	delete data;
 }

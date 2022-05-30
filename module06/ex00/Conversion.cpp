@@ -30,12 +30,40 @@ float Conversion::toFloat(void) const
 
 double Conversion::toDouble(void) const
 {
-	return static_cast<double>(value);
+	return value;
 }
 
 void Conversion::print(void) const
 {
+	if (error) {
+		std::cout << "Failed to convert the input." << std::endl;
+		return ;
+	}
+	std::cout << "char: ";
+	if (value > CHAR_MAX || value < CHAR_MIN || value != value)
+		std::cout << "impossible" << std::endl;
+	else if (toChar() >= 32 && toChar() < 127)
+		std::cout << "'" << toChar() << "'" << std::endl;
+	else
+		std::cout << "Non displayable" << std::endl;
 
+	std::cout << "int: ";
+	if (value > INT_MAX || value < INT_MIN || value != value)
+		std::cout << "impossible" << std::endl;
+	else
+		std::cout << toInt() << std::endl;
+
+	std::cout << "float: ";
+	if (toFloat() == static_cast<int64_t>(toFloat()))
+		std::cout << toFloat() << ".0f" << std::endl;
+	else
+		std::cout << std::setprecision(std::numeric_limits<float>::digits10) << toFloat() << "f" << std::endl;
+
+	std::cout << "double: ";
+	if (toDouble() == static_cast<int64_t>(toDouble()))
+		std::cout << toFloat() << ".0" << std::endl;
+	else
+		std::cout << std::setprecision(std::numeric_limits<float>::digits10) << toDouble() << std::endl;
 }
 
 Conversion::Conversion(): error(false), value(0.0)
@@ -56,18 +84,14 @@ Conversion::Conversion(std::string str): error(false)
 	}
 }
 
-Conversion::Conversion(const Conversion &origin)
-{
-
-}
+Conversion::Conversion(const Conversion &origin): error(origin.error), value(origin.value) {}
 
 Conversion &Conversion::operator=(const Conversion &origin)
 {
-
+	error = origin.error;
+	value = origin.value;
+	return *this;
 }
 
-Conversion::~Conversion()
-{
-
-}
+Conversion::~Conversion() {}
 

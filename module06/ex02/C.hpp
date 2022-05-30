@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   C.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hakim <hakim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 14:52:54 by hakim             #+#    #+#             */
-/*   Updated: 2022/05/17 14:52:55 by hakim            ###   ########.fr       */
+/*   Created: 2022/05/30 01:09:06 by hakim             #+#    #+#             */
+/*   Updated: 2022/05/30 01:09:07 by hakim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
-#include "Animal.hpp"
+#ifndef CPP06C
+# define CPP06C
 
-int main()
-{
-//	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+# include "Base.hpp"
 
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound();
+class C: public Base {};
 
-	delete j;
-	delete i;
-	return 0;
-}
+#endif

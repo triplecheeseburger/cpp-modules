@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "module06"
+			"path" : "ex00"
 		}
 	],
 	"backtrace" : 1,
@@ -10,8 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"include_directories"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -24,12 +23,6 @@
 			},
 			{
 				"command" : 0,
-				"file" : 0,
-				"line" : 8,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
 				"file" : 0,
 				"line" : 6,
 				"parent" : 0
@@ -45,14 +38,7 @@
 					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
 				},
 				{
-					"fragment" : "-std=gnu++14"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"path" : "/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module06/ex00"
+					"fragment" : "-std=gnu++98"
 				}
 			],
 			"language" : "CXX",
@@ -62,7 +48,7 @@
 				[
 					1
 				],
-				"standard" : "14"
+				"standard" : "98"
 			},
 			"sourceIndexes" : 
 			[
@@ -71,7 +57,7 @@
 			]
 		}
 	],
-	"id" : "module06::@6890427a1f51a3e7e1df",
+	"id" : "ex00::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -87,8 +73,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "module06",
-	"nameOnDisk" : "module06",
+	"name" : "ex00",
+	"nameOnDisk" : "ex00",
 	"paths" : 
 	{
 		"build" : ".",
