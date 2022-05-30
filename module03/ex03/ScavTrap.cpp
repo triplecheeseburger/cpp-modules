@@ -24,19 +24,6 @@ void ScavTrap::attack(const std::string& target) const
 			  << std::endl;
 }
 
-void ScavTrap::printStatus() const
-{
-	std::cout << std::endl;
-	std::cout << "===Status===" << std::endl;
-	std::cout << "name: " << name << std::endl;
-	std::cout << "hit points: " << hit_points << std::endl;
-	std::cout << "energy points: " << energy_points << std::endl;
-	std::cout << "attack damage: " << attack_damage << std::endl;
-	guardGate();
-	std::cout << "====DONE====" << std::endl;
-	std::cout << std::endl;
-}
-
 ScavTrap::ScavTrap(): ClapTrap("SC4V-TP"), on_guard(false)
 {
 

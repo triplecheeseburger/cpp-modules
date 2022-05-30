@@ -28,7 +28,6 @@ public:
 	void	guardGate(void) const;
 	void	toggleGuardmode(void);
 	void	attack(const std::string& target) const;
-	void	printStatus() const;
 
 	ScavTrap();
 	explicit ScavTrap(const std::string& name);
