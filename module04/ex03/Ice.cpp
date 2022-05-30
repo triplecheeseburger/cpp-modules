@@ -39,4 +39,3 @@ Ice::~Ice()
 {
 	std::cout << "Ice Destructor has been called." << std::endl;
 }
-

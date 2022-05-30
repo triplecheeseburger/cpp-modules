@@ -50,4 +50,3 @@ Brain::~Brain()
 {
 	std::cout << "Brain Destructor has been called." << std::endl;
 }
-

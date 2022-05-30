@@ -100,4 +100,3 @@ MateriaSource::~MateriaSource()
 	}
 	std::cout << "MateriaSource Destructor has been called." << std::endl;
 }
-

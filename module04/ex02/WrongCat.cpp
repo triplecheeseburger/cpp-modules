@@ -41,4 +41,3 @@ WrongCat::~WrongCat()
 {
 	std::cout << "Destructor has been called for WrongCat Class Instance: type " << type << "." << std::endl;
 }
-

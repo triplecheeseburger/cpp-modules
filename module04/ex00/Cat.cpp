@@ -41,4 +41,3 @@ Cat::~Cat()
 {
 	std::cout << "Destructor has been called for Cat Class Instance: type " << type << "." << std::endl;
 }
-

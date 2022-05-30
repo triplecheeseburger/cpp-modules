@@ -39,4 +39,3 @@ Cure::~Cure()
 {
 	std::cout << "Cure Destructor has been called." << std::endl;
 }
-
