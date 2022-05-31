@@ -50,8 +50,10 @@ Cat::Cat(const Cat &origin):
 
 Cat &Cat::operator=(const Cat &origin)
 {
-	type = origin.type;
-	*brain = *origin.brain;
+	if (this != &origin) {
+		type = origin.type;
+		*brain = *origin.brain;
+	}
 	std::cout << "Copy Constructor has been called for Cat Class Instance: type " << type << "." << std::endl;
 	return (*this);
 }

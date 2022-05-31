@@ -32,7 +32,9 @@ Dog::Dog(const Dog &origin):
 
 Dog &Dog::operator=(const Dog &origin)
 {
-	type = origin.type;
+	if (this != &origin) {
+		type = origin.type;
+	}
 	std::cout << "Copy Constructor has been called for Dog Class Instance: type " << type << "." << std::endl;
 	return (*this);
 }

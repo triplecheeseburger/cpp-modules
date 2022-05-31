@@ -14,6 +14,8 @@
 #include "Cat.hpp"
 #include "Animal.hpp"
 
+#define NUM_OF_ANIMALS 10
+
 void	test_dynamic(void)
 {
 	const Animal* j = new Dog();
@@ -22,7 +24,7 @@ void	test_dynamic(void)
 	delete i;
 }
 
-void	test_static(void)
+void	test_brain(void)
 {
 	Dog dog;
 	Cat cat;
@@ -48,10 +50,33 @@ void	test_static(void)
 	std::cout << copyAssignOperCat.getThought(0) << std::endl;
 }
 
+void	test_array(void)
+{
+	Animal*	animals[NUM_OF_ANIMALS];
+	Cat* some_cat;
+	Dog* some_dog;
+
+	for (int i = 0; i < NUM_OF_ANIMALS; i++)
+	{
+		if (i % 2 == 0)
+			animals[i] = new Cat();
+		else
+			animals[i] = new Dog();
+		animals[i]->makeSound();
+	}
+	some_cat = dynamic_cast<Cat *>(animals[6]);
+	std::cout << some_cat->getThought(2) << std::endl;
+	some_dog = dynamic_cast<Dog *>(animals[5]);
+	std::cout << some_dog->getThought(2) << std::endl;
+	for (int i = 0; i < NUM_OF_ANIMALS; i++)
+		delete animals[i];
+}
+
 int main()
 {
 	test_dynamic();
-	test_static();
+	test_brain();
+	test_array();
 	system("leaks ex01");
 	return 0;
 }

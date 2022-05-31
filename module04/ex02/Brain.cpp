@@ -41,8 +41,10 @@ Brain::Brain(const Brain &origin)
 
 Brain &Brain::operator=(const Brain &origin)
 {
-	for (int i = 0; i < CAPACITY; i++)
-		ideas[i] = origin.ideas[i];
+	if (this != &origin) {
+		for (int i = 0; i < CAPACITY; i++)
+			ideas[i] = origin.ideas[i];
+	}
 	return (*this);
 }
 

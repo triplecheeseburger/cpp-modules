@@ -98,16 +98,18 @@ Character::Character(const Character &origin): name(origin.name)
 
 Character &Character::operator=(const Character &origin)
 {
-	name = origin.name;
-	for (int i = 0; i < 4; i++)
-	{
-		if (inventory[i] != NULL)
+	if (this != &origin) {
+		name = origin.name;
+		for (int i = 0; i < 4; i++)
 		{
-			delete inventory[i];
-			inventory[i] = NULL;
+			if (inventory[i] != NULL)
+			{
+				delete inventory[i];
+				inventory[i] = NULL;
+			}
+			if (origin.inventory[i] != NULL)
+				inventory[i] = (origin.inventory[i])->clone();
 		}
-		if (origin.inventory[i] != NULL)
-			inventory[i] = (origin.inventory[i])->clone();
 	}
 	std::cout << "Character Copy Assignation Operator has been called." << std::endl;
 	return (*this);

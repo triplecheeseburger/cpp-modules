@@ -74,15 +74,17 @@ MateriaSource::MateriaSource(const MateriaSource &origin)
 
 MateriaSource &MateriaSource::operator=(const MateriaSource &origin)
 {
-	for (int i = 0; i < 4; i++)
-	{
-		if (inventory[i] != NULL)
+	if (this != &origin) {
+		for (int i = 0; i < 4; i++)
 		{
-			delete inventory[i];
-			inventory[i] = NULL;
+			if (inventory[i] != NULL)
+			{
+				delete inventory[i];
+				inventory[i] = NULL;
+			}
+			if (origin.inventory[i] != NULL)
+				inventory[i] = (origin.inventory[i])->clone();
 		}
-		if (origin.inventory[i] != NULL)
-			inventory[i] = (origin.inventory[i])->clone();
 	}
 	std::cout << "MateriaSource Copy Assignation Operator has been called." << std::endl;
 	return (*this);
