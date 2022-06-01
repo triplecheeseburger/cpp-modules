@@ -26,6 +26,7 @@ class RobotomyRequestForm: public Form
 private:
 	std::string target;
 
+	static int seed;
 	RobotomyRequestForm();
 
 public:

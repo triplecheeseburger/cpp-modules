@@ -45,7 +45,7 @@ void Form::isExecutable(const Bureaucrat& bureaucrat) const
 	if (this->getIsSigned() == false)
 		throw FormWithoutSignException();
 	if (grade_to_exec < bureaucrat.getGrade())
-		throw GradeTooHighException();
+		throw YouHaveNoPermissionException();
 }
 
 Form::Form(): name(""), is_signed(false), grade_to_sign(Form::grade_top), grade_to_exec(Form::grade_top) {}
@@ -92,6 +92,11 @@ const char *Form::GradeTooLowException::what() const throw()
 const char *Form::FormWithoutSignException::what() const throw()
 {
 	return "Form is not signed: Please get the signature first.";
+}
+
+const char *Form::YouHaveNoPermissionException::what() const throw()
+{
+	return "You have no permission to execute this form.";
 }
 
 std::ostream& operator<<(std::ostream& out, Form& form)

@@ -41,9 +41,34 @@ int main(void)
 	std::cout << (ppf2->getIsSigned() ? "true" : "false") << std::endl;
 
 	try {
+		hakim.executeForm(scf1);
+		ford.executeForm(scf1);
+		arthur.executeForm(scf1);
+		hakim.executeForm(*scf2);
+		ford.executeForm(*scf2);
+		arthur.executeForm(*scf2);
 
+		hakim.executeForm(rrf1);
+		ford.executeForm(rrf1);
+		arthur.executeForm(rrf1);
+		hakim.executeForm(*rrf2);
+		ford.executeForm(*rrf2);
+		arthur.executeForm(*rrf2);
+
+		hakim.executeForm(ppf1);
+		ford.executeForm(ppf1);
+		arthur.executeForm(ppf1);
+		hakim.executeForm(*ppf2);
+		ford.executeForm(*ppf2);
+		arthur.executeForm(*ppf2);
 	} catch (std::exception& e) {
-		std::cerr << e.what() << std::endl;
+		std::cout << e.what() << std::endl;
 	}
+
+	delete scf2;
+	delete rrf2;
+	delete ppf2;
+
+//	system("leaks ex02");
 	return 0;
 }

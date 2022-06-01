@@ -13,31 +13,29 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 int main(void)
 {
-	Bureaucrat hakim = Bureaucrat("hakim", 75);
-	Bureaucrat ford = Bureaucrat("Ford Prefect", 150);
+	Intern hakim = Intern();
 	Bureaucrat arthur = Bureaucrat("Arthur Dent", 1);
 
-	ShrubberyCreationForm scf1("my home");
-	Form* scf2 = new ShrubberyCreationForm("hakim's home");
-	RobotomyRequestForm rrf1("my home");
-	Form* rrf2 = new RobotomyRequestForm("hakim's home");
-	PresidentialPardonForm ppf1("my home");
-	Form* ppf2 = new PresidentialPardonForm("hakim's home");
+	Form* scf = hakim.makeForm("shrubbery creation", "hakim's home");
+	Form* rrf = hakim.makeForm("robotomy request", "hakim");
+	Form* ppf = hakim.makeForm("presidential pardon", "hakim");
+	hakim.makeForm("assassination request", "hakim");
 
-	arthur.signForm(scf1);
-	arthur.signForm(*scf2);
-	arthur.signForm(rrf1);
-	arthur.signForm(*rrf2);
-	arthur.signForm(ppf1);
-	arthur.signForm(*ppf2);
-	std::cout << scf1.getIsSigned() << std::endl;
-	try {
+	arthur.signForm(*scf);
+	arthur.executeForm(*scf);
 
-	} catch (std::exception& e) {
-		std::cerr << e.what() << std::endl;
-	}
+	arthur.signForm(*rrf);
+	arthur.executeForm(*rrf);
+
+	arthur.signForm(*ppf);
+	arthur.executeForm(*ppf);
+
+	delete scf;
+	delete rrf;
+	delete ppf;
 	return 0;
 }

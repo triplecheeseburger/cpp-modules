@@ -12,13 +12,19 @@
 
 #include "RobotomyRequestForm.hpp"
 
+int RobotomyRequestForm::seed = 0;
+
 void RobotomyRequestForm::execute(const Bureaucrat &bureaucrat) const
 {
 	isExecutable(bureaucrat);
-	std::srand(std::time(NULL));
+	if (RobotomyRequestForm::seed == 0) {
+		std::srand(std::time(NULL));
+		seed = 1;
+	}
 	std::cout << "dodododo...dodododo...drill..." << std::endl;
-	if (std::rand() % 2)
+	if (std::rand() % 2) {
 		std::cout << target << " has been robotomized successfully." << std::endl;
+	}
 	else
 		std::cout << target << " robotomization has been failed." << std::endl;
 }
