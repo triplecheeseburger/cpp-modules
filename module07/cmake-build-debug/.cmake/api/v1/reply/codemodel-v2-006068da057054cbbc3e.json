@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "module07",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ex00::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex00-Debug-44db073a9f06ffc9b6eb.json",
+					"name" : "ex00",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex01-Debug-0994c15448941de49de0.json",
+					"name" : "ex01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ex02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ex02-Debug-c01f07197fa8b8e84ca5.json",
+					"name" : "ex02",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module07/cmake-build-debug",
+		"source" : "/Users/hangyulkim/42/42cursus/4_circle/cpp-modules/module07"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
