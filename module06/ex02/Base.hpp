@@ -14,6 +14,7 @@
 # define CPP06BASE
 
 class Base {
+public:
 	virtual ~Base();
 };
 

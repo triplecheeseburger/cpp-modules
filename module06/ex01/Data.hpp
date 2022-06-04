@@ -18,6 +18,7 @@
 struct Data {
 	int			x;
 	int			y;
+	std::string	name;
 };
 
 uintptr_t serialize(Data* ptr);

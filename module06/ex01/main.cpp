@@ -20,14 +20,15 @@ int main(void)
 
 	data->x = 72;
 	data->y = 48;
+	data->name = "coordinate";
 
-	std::cout << "Data's x: " << data->x << " y: " << data->y << std::endl;
+	std::cout << "Data's x: " << data->x << " y: " << data->y << " " << data->name << std::endl;
 	raw = serialize(data);
 	std::cout << "raw:       " << std::hex << raw << std::dec << std::endl;
 	std::cout << "data:    " << data << std::endl;
 
 	newData = deserialize(raw);
 	std::cout << "newData: " << newData << std::endl;
-	std::cout << "newData's x: " << newData->x << " y: " << newData->y << std::endl;
+	std::cout << "newData's x: " << newData->x << " y: " << newData->y << " " << data->name << std::endl;
 	delete data;
 }
