@@ -55,7 +55,7 @@ Form::Form(const std::string &name, const int &grade_to_sign, const int &grade_t
 {
 	if (grade_to_exec < Form::grade_top || grade_to_sign < Form::grade_top)
 		throw GradeTooHighException();
-	if (grade_to_exec > Form::grade_bottom || grade_to_sign > Form::grade_to_sign)
+	if (grade_to_exec > Form::grade_bottom || grade_to_sign > Form::grade_bottom)
 		throw GradeTooLowException();
 }
 
