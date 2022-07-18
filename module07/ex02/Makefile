@@ -10,24 +10,23 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC = c++
+CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 NAME = ex00
-SRCS =	Conversion.cpp \
-        main.cpp
+SRCS = main.cpp
 
 OBJS = $(SRCS:%.cpp=%.o)
 
 INCLUDES = -I./
 
 %.o: %.cpp
-	$(CC) $(CXXFLAGS) $(INCLUDES) -c $< -o $(<:.cpp=.o)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $(<:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CXXFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
 
 clean:
 	rm -f $(OBJS)
