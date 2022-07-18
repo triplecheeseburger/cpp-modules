@@ -15,22 +15,25 @@
 Form *Intern::makeForm(const std::string &form_name, const std::string &target) const
 {
 	std::string requests[3] = {"shrubbery creation", "robotomy request", "presidential pardon"};
-	Form* result = NULL;
-	Form* forms[3] = {new ShrubberyCreationForm(target), new RobotomyRequestForm(target), new PresidentialPardonForm(target)};
 	try {
 		for (int i = 0; i < 3; i++) {
-			if (form_name == requests[i])
-				result = forms[i];
-			else
-				delete forms[i];
+			if (form_name == requests[i]) {
+				std::cout << "Intern creates " << form_name << std::endl;
+				switch (i) {
+					case 0:
+						return new ShrubberyCreationForm(target);
+					case 1:
+						return new RobotomyRequestForm(target);
+					case 2:
+						return new PresidentialPardonForm(target);
+				}
+			}
 		}
-		if (result == NULL)
-			throw NoSuchFormException();
-		std::cout << "Intern creates " << form_name << std::endl;
+		throw NoSuchFormException();
 	} catch (std::exception & e) {
 		std::cerr << e.what() << std::endl;
 	}
-	return result;
+	return NULL;
 }
 
 Intern::Intern() {}
