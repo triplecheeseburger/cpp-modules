@@ -10,11 +10,11 @@
 #                                                                              #
 # **************************************************************************** #
 
-CXX = c++
+CC = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = ex01
-SRCS =	serializes.cpp \
+NAME = ex00
+SRCS =	Conversion.cpp \
         main.cpp
 
 OBJS = $(SRCS:%.cpp=%.o)
@@ -22,12 +22,12 @@ OBJS = $(SRCS:%.cpp=%.o)
 INCLUDES = -I./
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $(<:.cpp=.o)
+	$(CC) $(CXXFLAGS) $(INCLUDES) -c $< -o $(<:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
+	$(CC) $(CXXFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
 
 clean:
 	rm -f $(OBJS)
