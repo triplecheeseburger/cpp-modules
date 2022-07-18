@@ -54,19 +54,19 @@ void Conversion::print(void) const
 		std::cout << toInt() << std::endl;
 
 	std::cout << "float: ";
-	if (toFloat() == static_cast<int64_t>(toFloat()))
-		std::cout << toFloat() << ".0f" << std::endl;
+	if (toFloat() == static_cast<int64_t>(toFloat()) && (-100000 < toFloat() && toFloat() < 1000000))
+		std::cout << std::setprecision(std::numeric_limits<float>::digits10) << toFloat() << ".0f" << std::endl;
 	else
 		std::cout << std::setprecision(std::numeric_limits<float>::digits10) << toFloat() << "f" << std::endl;
 
 	std::cout << "double: ";
-	if (toDouble() == static_cast<int64_t>(toDouble()))
-		std::cout << toFloat() << ".0" << std::endl;
+	if (toDouble() == static_cast<int64_t>(toDouble()) && (-1000000000000000LL < toDouble() && toDouble() < 1000000000000000LL))
+		std::cout << std::setprecision(std::numeric_limits<double>::digits10) << toDouble() << ".0" << std::endl;
 	else
-		std::cout << std::setprecision(std::numeric_limits<float>::digits10) << toDouble() << std::endl;
+		std::cout << std::setprecision(std::numeric_limits<double>::digits10) << toDouble() << std::endl;
 }
 
-Conversion::Conversion(): error(false), value(0.0)
+Conversion::Conversion(): value(0.0), error(false)
 {}
 
 Conversion::Conversion(std::string str): error(false)
@@ -84,7 +84,7 @@ Conversion::Conversion(std::string str): error(false)
 	}
 }
 
-Conversion::Conversion(const Conversion &origin): error(origin.error), value(origin.value) {}
+Conversion::Conversion(const Conversion &origin): value(origin.value), error(origin.error) {}
 
 Conversion &Conversion::operator=(const Conversion &origin)
 {
