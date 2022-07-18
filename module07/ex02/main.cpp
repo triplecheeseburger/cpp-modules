@@ -58,14 +58,13 @@ int main(void) {
 	std::cout << std::endl;
 
 	try {
-//		intArr[10] = 0;
-//		intArr[-1] = 0;
-//		intArr[99] = 0;
-//		evalStringArr[10] = " ";
-//		evalStringArr[-1] = " ";
+		intArr[10] = 0;
+		intArr[-1] = 0;
+		intArr[99] = 0;
+		evalStringArr[10] = " ";
+		evalStringArr[-1] = " ";
 		evalStringArr[99] = " ";
 	} catch (std::exception & e) {
 		std::cerr << e.what() << std::endl;
 	}
-	system("leaks ex02");
 }
