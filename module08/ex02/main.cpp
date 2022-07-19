@@ -38,15 +38,15 @@ int main()
 	std::cout << std::endl;
 
 	std::list<int> lst;
-	lst.push_back(5);
-	lst.push_back(17);
+	lst.push_back(1);
+	lst.push_back(2);
 	std::cout << "lst.top(): " << lst.back() << std::endl;
 	lst.pop_back();
 	std::cout << "lst.size(): " << lst.size() << std::endl;
 	lst.push_back(3);
+	lst.push_back(4);
 	lst.push_back(5);
-	lst.push_back(737);
-	lst.push_back(0);
+	lst.push_back(42);
 	std::list<int>::iterator lit = lst.begin();
 	std::list<int>::iterator lite = lst.end();
 	++lit;
@@ -56,7 +56,7 @@ int main()
 		++lit;
 	}
 	std::stack<int, std::list<int> > lstToStack(lst);
-
+	std::cout << std::endl;
 	std::cout << "reverse iterator" << std::endl;
 	MutantStack<int>::reverse_iterator rit = mstack.rbegin();
 	MutantStack<int>::reverse_iterator rite = mstack.rend();

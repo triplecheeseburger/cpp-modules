@@ -81,6 +81,5 @@ int main(void) {
 	} catch (std::exception & e) {
 		std::cerr << e.what() << std::endl;
 	}
-	system("leaks a.out");
 	return 0;
 }

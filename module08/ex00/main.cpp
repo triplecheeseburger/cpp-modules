@@ -27,7 +27,7 @@ int main(void) {
 		deq.push_back(i + 20);
 	}
 	try {
-		std::cout << "I found " << *(easyfind(vec, 5)) << std::endl;
+		std::cout << "I found " << *(easyfind(vec, 1)) << std::endl;
 		easyfind(vec, 11);
 	} catch (std::exception & e) {
 		std::cerr << e.what() << std::endl;
@@ -39,7 +39,7 @@ int main(void) {
 		std::cerr << e.what() << std::endl;
 	}
 	try {
-		std::cout << "I found " << *(easyfind(deq, 22)) << std::endl;
+		std::cout << "I found " << *(easyfind(deq, 30)) << std::endl;
 		easyfind(deq, -2);
 	} catch (std::exception & e) {
 		std::cerr << e.what() << std::endl;
